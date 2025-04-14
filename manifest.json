@@ -1,12 +1,17 @@
 {
-  "short_name": "JRD",
+  "short_name": "React App",
   "name": "JRD Ecommerce",
   "icons": [
-      {
-          "src": "jrd.png",
-          "sizes": "192x192",
-          "type": "image/png"
-      }
+    {
+      "src": "jrd.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "jrd.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
   ],
   "start_url": ".",
   "display": "standalone",
