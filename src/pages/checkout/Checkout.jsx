@@ -405,7 +405,7 @@ const Checkout = () => {
               </p>
               <p className="form-field-wrapper col-sm-12">
                 <label htmlFor="order_comments">notes de commande &nbsp;<span className="optional">(optional)</span></label>
-                <textarea name="order_comments" className="form-full" id="order_comments" placeholder="Notes about your order, e.g. special notes for delivery." rows={2} cols={5} defaultValue={""} />
+                <textarea name="order_comments" className="form-full" id="order_comments" placeholder="Remarques sur votre commande, par exemple des remarques spéciales pour la livraison." rows={2} cols={5} defaultValue={""} />
               </p>
             </div>
           </div>

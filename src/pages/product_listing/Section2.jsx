@@ -149,7 +149,7 @@ const Section2 = () => {
                 </a>
                 {/*Add to Link*/}
                 <div className="add-to-link">
-                  <a className="btn btn--primary btn--sm">Add To Cart</a>
+                  <a className="btn btn--primary btn--sm">ajouter au panier</a>
                 </div>
                 {/*Hover Icons*/}
                 <div className="hover-product-icon">

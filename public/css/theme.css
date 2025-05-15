@@ -80,6 +80,8 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    margin:0;
+    padding:0;
 }
 
     *, *::after, *::before {
@@ -6308,4 +6310,16 @@ form .lost_password {
 
 .footer .social a:hover, .footer .links li a:hover, .footer .links li a:hover {
     opacity: 0.7;
+}
+
+.item {
+    min-height: 100vh;
+    position: relative;
+  }
+  
+
+@media (max-width: 768px) {
+  .item {
+    min-height: 600px;/* Ajuste automatiquement la hauteur pour mobile */
+  }
 }

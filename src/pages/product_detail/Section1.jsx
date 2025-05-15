@@ -76,7 +76,7 @@ const Section1 = () => {
               {/*<div class="tag brand-name"><a href="#">Mazaar</a></div>*/}
               {/*Product Title*/}
               <h3 className="product-item-title">
-                Man Ruched Floral Applique Tee
+                chemise manches longues homme
               </h3>
               {/*Product Ratting*/}
               <div className="product-rating">
@@ -109,10 +109,16 @@ const Section1 = () => {
               {/*Product Description*/}
               <div className="product-description">
                 <p>
-                  When an unknown printer took a galley of type and scrambled it
-                  to make a type specimen book. It has survived not only five
-                  centuries. who seeks after it and wants to have it, simply
-                  because it is pain.
+                  chemise de caractère qui peut se porter de manière décontractée
+                  ou habillée. Sa coupe est ajustée et sa matière est douce et
+                  agréable à porter. Sa couleur est intemporelle et s'associe
+                  facilement avec d'autres vêtements. Cette chemise est
+                  parfaite pour les occasions spéciales ou pour un look
+                  décontracté au quotidien. Elle peut être portée avec un
+                  pantalon ou un jean pour un look élégant et sophistiqué. Sa
+                  matière est légère et respirante, ce qui la rend idéale pour
+                  les journées chaudes. Cette chemise est un incontournable de
+                  la garde-robe masculine et peut être portée en toute saison.
                 </p>
               </div>
               {/*Product Variations Form*/}
@@ -411,23 +417,13 @@ const Section1 = () => {
                 data-parent="#product-accordian-Content"
               >
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry’s
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  Ce chemisier pour homme est un vêtement élégant et moderne qui
                 </p>
                 <p>
-                  It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining essentially unchanged.
-                  It was popularised in the 1960s with the release of Letraset
-                  sheets containing Lorem Ipsum passages, and more recently with
-                  desktop publishing software like Aldus PageMaker including
-                  versions of Lorem Ipsum.
+                  peut être porté pour diverses occasions. Il est fabriqué à
                 </p>
                 <p>
-                  There is no one who loves pain itself, who seeks after it and
-                  wants to have it, simply because it is pain.
+                  partir de matériaux de haute qualité, ce qui le rend confortable
                 </p>
               </div>
             </div>
@@ -441,7 +437,7 @@ const Section1 = () => {
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  Additional information
+                  + d'infos
                 </a>
               </div>
               {/*Body*/}
@@ -501,7 +497,7 @@ const Section1 = () => {
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                  Reviews (3)
+                 Avis (3)
                 </a>
               </div>
               {/*Body*/}
@@ -515,10 +511,9 @@ const Section1 = () => {
                   {/*Add a Review*/}
                   <div className="col-md-6">
                     <div className="review-form-wrapper">
-                      <h4 className="review-title">Add a Review</h4>
+                      <h4 className="review-title">Ajouter un avis</h4>
                       <p>
-                        Your email address will not be published. Required
-                        fields are marked *
+                        Votre adresse mail ne
                       </p>
                       <form id="comment-form" className="comment-form">
                         <div className="form-field-wrapper">

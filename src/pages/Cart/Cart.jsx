@@ -65,11 +65,11 @@ const Cart = () => {
                             </td>
                             <td className="product-thumbnail">
                               <Link to="/product_detail"> {/* Lien vers les détails du produit */}
-                                <img src="img/products/01/01.jpg" alt="Produit" />
+                                <img src="img/products/13/01.jpg" alt="Produit" />
                               </Link>
                             </td>
                             <td className="product-name">
-                              <Link to="/product_detail">Man Ruched Floral Applique Tee</Link>
+                              <Link to="/product_detail">Chemise manches longues homme</Link>
                             </td>
                             <td className="product-price">
                               <span className="product-price-amount amount">
@@ -119,11 +119,11 @@ const Cart = () => {
                             </td>
                             <td className="product-thumbnail">
                               <Link to="/product_detail"> {/* Lien vers les détails du produit */}
-                                <img src="img/products/02/01.jpg" alt="Produit" />
+                                <img src="img/products/13/01.jpg" alt="Produit" />
                               </Link>
                             </td>
                             <td className="product-name">
-                              <Link to="/product_detail">Man Ruched Floral Applique Tee</Link>
+                              <Link to="/product_detail">Chemise manches longues homme</Link>
                             </td>
                             <td className="product-price">
                               <span className="product-price-amount amount">

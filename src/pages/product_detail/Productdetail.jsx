@@ -17,10 +17,10 @@ const Productdetail = () => {
             <h1 className="breadcrumb-title"> Vêtements de mode homme</h1>
             <nav className="breadcrumb-link">
               <span>
-                <a href="home.html">Accueil</a>
+                <a href="/">Accueil</a>
               </span>
               <span>
-                <a href="home.html">Categories</a>
+                <a href="/">Categories</a>
               </span>
               <span> Stock </span>
             </nav>

@@ -56,7 +56,7 @@ const Header = () => {
                           <li>
                             <Link to="/home_02">
                               <img
-                                src="img/banner/themeshots/shot_home02.jpg"
+                                src="img/banner/themeshots/img_007.jpg"
                                 alt="Banner"
                               />
                               <figure className="text--center">Home 02</figure>
@@ -104,18 +104,22 @@ const Header = () => {
                         </ul>
                       </div>
                       <div className="col-lg-4 col-md-6">
-                        <ul>
-                          <li>
-                            <Link to="/home_06">
-                              <img
-                                src="img/banner/themeshots/shot_home06.jpg"
-                                alt="Banner"
-                              />
-                              <figure className="text--center">Home 06</figure>
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
+  <ul>
+    <li>
+      <Link to="/home_06">
+        <figure className="text--center">
+          <img
+            src="img/banner/themeshots/shot_home06.jpg"
+            alt="Banner"
+          />
+          Home 06
+        </figure>
+      </Link>
+    </li>
+  </ul>
+</div>
+  
+
                     </div>
                   </div>
                   {/*End Dropdown*/}
@@ -210,7 +214,7 @@ const Header = () => {
                               <Link to="/product_listing">Dresses</Link>
                             </li>
                             <li>
-                              <Link to="product_listing">Tees &amp; Polo</Link>
+                              <Link to="/product_listing">Tees &amp; Polo</Link>
                             </li>
                           </ul>
                         </div>
@@ -231,19 +235,19 @@ const Header = () => {
                               <Link to="/product_listing">Shorts &amp; Three-Fourths</Link>
                             </li>
                             <li>
-                              <Link to="product_listing">Shirts</Link>
+                              <Link to="/product_listing">Shirts</Link>
                             </li>
                             <li>
-                              <Link to="product_listing">Top &amp; Bottom Sets</Link>
+                              <Link to="/product_listing">Top &amp; Bottom Sets</Link>
                             </li>
                             <li>
-                              <Link to="product_listing">Ride On &amp; Scooters</Link>
+                              <Link to="/product_listing">Ride On &amp; Scooters</Link>
                             </li>
                             <li>
-                              <Link to="product_listing">Electronic Toys</Link>
+                              <Link to="/product_listing">Electronic Toys</Link>
                             </li>
                             <li>
-                              <Link to="product_listing">Soft Toys</Link>
+                              <Link to="/product_listing">Soft Toys</Link>
                             </li>
                           </ul>
                         </div>
@@ -297,28 +301,28 @@ const Header = () => {
                             <span className="dropdown-title">Collection</span>
                           </li>
                           <li>
-                            <Link to="#">New In clothing</Link>
+                            <Link to="/product_listing">New In clothing</Link>
                           </li>
                           <li>
-                            <Link to="#">New In Footwear</Link>
+                            <Link to="/product_listing">New In Footwear</Link>
                           </li>
                           <li>
-                            <Link to="#">New In Bags</Link>
+                            <Link to="/product_listing">New In Bags</Link>
                           </li>
                           <li>
-                            <Link to="#">New In Watches</Link>
+                            <Link to="/product_listing">New In Watches</Link>
                           </li>
                           <li>
-                            <Link to="#">Shirt</Link>
+                            <Link to="/product_listing">Shirt</Link>
                           </li>
                           <li>
-                            <Link to="#">Jeans</Link>
+                            <Link to="/product_listing">Jeans</Link>
                           </li>
                           <li>
-                            <Link to="#">Casual Trousers</Link>
+                            <Link to="/product_listing">Casual Trousers</Link>
                           </li>
                           <li>
-                            <Link to="#">Suits &amp; Blazers</Link>
+                            <Link to="/product_listing">Suits &amp; Blazers</Link>
                           </li>
                         </ul>
                       </div>
@@ -328,28 +332,28 @@ const Header = () => {
                             <span className="dropdown-title">Watches</span>
                           </li>
                           <li>
-                            <Link to="#">Analog</Link>
+                            <Link to="/proctuct_listing">Analog</Link>
                           </li>
                           <li>
-                            <Link to="#">Chronograph</Link>
+                            <Link to="product_listing">Chronograph</Link>
                           </li>
                           <li>
-                            <Link to="#">Digital</Link>
+                            <Link to="/product_listing">Digital</Link>
                           </li>
                           <li>
-                            <Link to="#">Watch Cases</Link>
+                            <Link to="/product_listing">Watch Cases</Link>
                           </li>
                           <li>
-                            <Link to="#">Shoes</Link>
+                            <Link to="/product_listing">Shoes</Link>
                           </li>
                           <li>
-                            <Link to="#">Lether Wallets</Link>
+                            <Link to="/product_listing">Lether Wallets</Link>
                           </li>
                           <li>
-                            <Link to="#">Belts</Link>
+                            <Link to="/product_listing">Belts</Link>
                           </li>
                           <li>
-                            <Link to="#">Accesoires</Link>
+                            <Link to="/product_listing">Accesoires</Link>
                           </li>
                         </ul>
                       </div>
@@ -390,25 +394,25 @@ const Header = () => {
                             <span className="dropdown-title">Collection</span>
                           </li>
                           <li>
-                            <Link to="#">Back In Stock Clothes</Link>
+                            <Link to="/product_listing">Back In Stock Clothes</Link>
                           </li>
                           <li>
-                            <Link to="#">Dresses</Link>
+                            <Link to="product_listing">Dresses</Link>
                           </li>
                           <li>
-                            <Link to="#">Tops &amp; Tees</Link>
+                            <Link to="product_listing">Tops &amp; Tees</Link>
                           </li>
                           <li>
-                            <Link to="#">Sweatshirts</Link>
+                            <Link to="product_listing">Sweatshirts</Link>
                           </li>
                           <li>
-                            <Link to="#">Sweaters </Link>
+                            <Link to="product_listing">Sweaters </Link>
                           </li>
                           <li>
-                            <Link to="#">Kimonos</Link>
+                            <Link to="/product_listing">Kimonos</Link>
                           </li>
                           <li>
-                            <Link to="#">Jackets</Link>
+                            <Link to="product_listing">Jackets</Link>
                           </li>
                         </ul>
                       </div>
@@ -420,25 +424,25 @@ const Header = () => {
                             </span>
                           </li>
                           <li>
-                            <Link to="#">All Wellness</Link>
+                            <Link to="product_listing">All Wellness</Link>
                           </li>
                           <li>
-                            <Link to="#">Makeup</Link>
+                            <Link to="product_listing">Makeup</Link>
                           </li>
                           <li>
-                            <Link to="#">Skincare</Link>
+                            <Link to="product_listing">Skincare</Link>
                           </li>
                           <li>
-                            <Link to="#">Body</Link>
+                            <Link to="product_listing">Body</Link>
                           </li>
                           <li>
-                            <Link to="#">Sun Care</Link>
+                            <Link to="product_listing">Sun Care</Link>
                           </li>
                           <li>
-                            <Link to="#">Hair</Link>
+                            <Link to="product_listing">Hair</Link>
                           </li>
                           <li>
-                            <Link to="#">Aromatherapy</Link>
+                            <Link to="product_listing">Aromatherapy</Link>
                           </li>
                         </ul>
                       </div>
@@ -448,25 +452,25 @@ const Header = () => {
                             <span className="dropdown-title">Accessoires</span>
                           </li>
                           <li>
-                            <Link to="#">New Accesories</Link>
+                            <Link to="product_listing">New Accesories</Link>
                           </li>
                           <li>
-                            <Link to="#">Jewelry</Link>
+                            <Link to="product_listing">Jewelry</Link>
                           </li>
                           <li>
-                            <Link to="#">Bags</Link>
+                            <Link to="product_listing">Bags</Link>
                           </li>
                           <li>
-                            <Link to="#">Hats</Link>
+                            <Link to="product_listing">Hats</Link>
                           </li>
                           <li>
-                            <Link to="#">Sunglasses</Link>
+                            <Link to="product_listing">Sunglasses</Link>
                           </li>
                           <li>
-                            <Link to="#">Scarves</Link>
+                            <Link to="product_listing">Scarves</Link>
                           </li>
                           <li>
-                            <Link to="#">Belts</Link>
+                            <Link to="product_listing">Belts</Link>
                           </li>
                         </ul>
                       </div>
@@ -474,130 +478,9 @@ const Header = () => {
                   </div>
                   {/*End Dropdown*/}
                 </li>
-                <li className="nav-menu-item mega-menu">
-                  <Link
-                    to="#"
-                    className="sale-color"
-                    onMouseLeave={() => {
-                      setactivemenu("");
-                    }}
-                    onMouseEnter={() => {
-                      setactivemenu("Sale");
-                    }}
-                  >
-                    vente
-                  </Link>
-                  {/*Dropdown*/}
-                  <div
-                    className="nav-dropdown mega-dropdown"
-                    onMouseLeave={() => {
-                      setactivemenu("");
-                    }}
-                    onMouseEnter={() => {
-                      setactivemenu("Sale");
-                    }}
-                    style={{
-                      display: activemenu === "Sale" ? "block" : "none",
-                      opacity: 1,
-                    }}
-                  >
-                    <div className="container">
-                      <div className="row">
-                        <div className="col-lg-3">
-                          <ul>
-                            <li>
-                              <Link to="#">New Sale</Link>
-                            </li>
-                            <li>
-                              <Link to="#">All Sale</Link>
-                            </li>
-                            <li>
-                              <Link to="#">Featured Sale</Link>
-                            </li>
-                            <li>
-                              <Link to="#">Sale Dresses</Link>
-                            </li>
-                            <li>
-                              <Link to="#">Sale Tops</Link>
-                            </li>
-                            <li>
-                              <Link to="#">Sale Sweaters</Link>
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="col-lg-3">
-                          <ul>
-                            <li>
-                              <Link to="#">Sale Jackets &amp; Outerwear </Link>
-                            </li>
-                            <li>
-                              <Link to="#">Sale Bottoms</Link>
-                            </li>
-                            <li>
-                              <Link to="#">Sale Intimates</Link>
-                            </li>
-                            <li>
-                              <Link to="#">Sale Accessories</Link>
-                            </li>
-                            <li>
-                              <Link to="#">Sale Shoes</Link>
-                            </li>
-                            <li>
-                              <Link to="#">Sale Bags</Link>
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="col-lg-3">
-                          <ul>
-                            <li>
-                              <Link to="#">Sale Beauty &amp; Wellness</Link>
-                            </li>
-                            <li>
-                              <Link to="#">Sale FP Movement</Link>
-                            </li>
-                            <li>
-                              <Link to="#">Sale Swim</Link>
-                            </li>
-                            <li>
-                              <Link to="#">
-                                Sale FP Beach &amp; Endless Summer{" "}
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to="#">Sale Under $19.95</Link>
-                            </li>
-                            <li>
-                              <Link to="#">Sale Sport</Link>
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="col-lg-3">
-                          <ul>
-                            <li>
-                              <Link to="#">Sale Under $29.95 </Link>
-                            </li>
-                            <li>
-                              <Link to="#">Sale Under $49.95 </Link>
-                            </li>
-                            <li>
-                              <Link to="#">Sale Under $59.95 </Link>
-                            </li>
-                            <li>
-                              <Link to="#">Sale Under $69.95</Link>
-                            </li>
-                            <li>
-                              <Link to="#">Sale Under $89.95 </Link>
-                            </li>
-                            <li>
-                              <Link to="#">Sale Under $99.95 </Link>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/*End Dropdown*/}
-                </li>
+             
+                  {/*End</li> Dropdown*/}
+                
                 <li className="nav-menu-item">
                   <Link to="/blog_list">Blog</Link>
                   {/*Dropdown*/}
@@ -672,7 +555,7 @@ const Header = () => {
                   {/*End Dropdown*/}
                 </li>
                 <li className="nav-menu-item">
-                  <Link to="#">Pages</Link>
+                  <Link to="/product_listing">Pages</Link>
                   {/*Dropdown*/}
                   <div className="nav-dropdown col2-dropdown left">
                     <div className="row">

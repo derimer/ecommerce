@@ -19,7 +19,7 @@ const About = () => {
           <div className="col-12">
             <h1 className="breadcrumb-title">A propos</h1>
             <nav className="breadcrumb-link">
-              <span><a href="home.html">Accueil</a></span>
+              <span><a href="/">Accueil</a></span>
               <span>Qui sommes nous</span>
             </nav>
           </div>
@@ -35,13 +35,15 @@ const About = () => {
         <div className="col-sm-12 col-md-7 col-lg-6 d-flex mb-sm-5">
           <div className="align-self-center">
             <h2>Welcome to JRD Store!</h2>
-            <p className="large">JRD Shop is a premium HTML template designed and develoved from the ground up with the sole purpose of helping you create an astonishing, the beautiful and user friendly website that will boost your product’s sales.</p>
-            <p className="color--dark text--bold">The theme design package provides a complete Ecommerce theme set for your online store according to your desired theme. This includes all Ecommerce themes that are required for your online store's successful implementation.</p>
-            <a href="#" className="btn btn--primary space-t--1">Shop Now</a>
+            <p className="large">JRD boutique est un modèle HTML premium conçu et développé de A à Z pour vous aider à créer un site web époustouflant, élégant et convivial qui boostera vos ventes.
+
+</p>
+            <p className="color--dark text--bold">Le pack de création de thème comprend un ensemble complet de thèmes e-commerce pour votre boutique en ligne, selon vos envies. Il comprend tous les thèmes e-commerce nécessaires à la réussite de votre site.</p>
+            <a href="/" className="btn btn--primary space-t--1">voir les offres</a>
           </div>
         </div>
         <div className="col-sm-12 col-md-5 col-lg-6">
-          <img src="img/categories/collection_006.jpg" alt />
+          <img src="img/categories/collection_006.jpg" alt="liste des categories" />
         </div>
       </div>
     </div>
@@ -65,14 +67,20 @@ const About = () => {
             <div className="product-item-img">
               {/*Image*/}
               <a className="product-item-img-link">
-                <img src="img/products/10/01.jpg" alt="Product Item" />
+                <img src="img/products/10/01.jpg" alt="chemise homme" />
               </a>
               {/*Hover Icons*/}
               <div className="hover-product-icon">
                 <div className="product-icon-btn-wrap">
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Facebook"><i className="ti-facebook" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Twitter"><i className="ti-twitter" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Google"><i className="ti-google" /></a>
+                  <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="left" title="Facebook">
+                    <i className="ti-facebook" />
+                  </a>
+                  <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="left" title="Twitter">
+                    <i className="ti-twitter" />
+                  </a>
+                  <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="left" title="Google">
+                    <i className="ti-google" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -90,14 +98,20 @@ const About = () => {
             <div className="product-item-img">
               {/*Image*/}
               <a className="product-item-img-link">
-                <img src="img/products/11/01.jpg" alt="Product Item" />
+                <img src="img/products/11/01.jpg" alt="polo homme" />
               </a>
               {/*Hover Icons*/}
               <div className="hover-product-icon">
                 <div className="product-icon-btn-wrap">
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Facebook"><i className="ti-facebook" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Twitter"><i className="ti-twitter" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Google"><i className="ti-google" /></a>
+                  <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="left" title="Facebook">
+                    <i className="ti-facebook" />
+                  </a>
+                  <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="left" title="Twitter">
+                    <i className="ti-twitter" />
+                  </a>
+                  <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="left" title="Google">
+                    <i className="ti-google" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -120,9 +134,15 @@ const About = () => {
               {/*Hover Icons*/}
               <div className="hover-product-icon">
                 <div className="product-icon-btn-wrap">
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Facebook"><i className="ti-facebook" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Twitter"><i className="ti-twitter" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Google"><i className="ti-google" /></a>
+                  <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="left" title="Facebook">
+                    <i className="ti-facebook" />
+                  </a>
+                  <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="left" title="Twitter">
+                    <i className="ti-twitter" />
+                  </a>
+                  <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="left" title="Google">
+                    <i className="ti-google" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -145,9 +165,15 @@ const About = () => {
               {/*Hover Icons*/}
               <div className="hover-product-icon">
                 <div className="product-icon-btn-wrap">
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Facebook"><i className="ti-facebook" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Twitter"><i className="ti-twitter" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Google"><i className="ti-google" /></a>
+                  <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="left" title="Facebook">
+                    <i className="ti-facebook" />
+                  </a>
+                  <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="left" title="Twitter">
+                    <i className="ti-twitter" />
+                  </a>
+                  <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="left" title="Google">
+                    <i className="ti-google" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -173,7 +199,7 @@ const About = () => {
             <div className="item">
               <div className="testimonials-item">
                 <div className="testimonials-icon"><i className="ti-quote-left" /></div>
-                <p className="testimonials-quote">“There's plenty of money out there. They print more every day. But this ticket, there's only five of them in the whole world, and that's all there's ever going to be. Only a dummy would give this up for something as common money. Are you a dummy?”</p>
+                <p className="testimonials-quote">l y a beaucoup d'argent en circulation. On en imprime chaque jour davantage. Mais ce billet, il n'y en a que cinq dans le monde, et c'est tout ce qu'il y aura jamais. Seul un idiot céderait ça pour une monnaie aussi banale. Êtes-vous un idiot ?</p>
                 <div className="testimonials-people">
                   <h6 className="testimonials-people-title">Anthony T. Hincks</h6>
                   <span className="testimonials-people-sub_title">(Apple Founder)</span>
@@ -183,7 +209,7 @@ const About = () => {
             <div className="item">
               <div className="testimonials-item">
                 <div className="testimonials-icon"><i className="ti-quote-left" /></div>
-                <p className="testimonials-quote">“So, what if, instead of thinking about solving your whole life, you just think about adding additional good things. One at a time. Just let your pile of good things grow”</p>
+                <p className="testimonials-quote">« Et si, au lieu de penser à résoudre toute votre vie, vous pensiez simplement à ajouter de bonnes choses. Une à la fois. Laissez votre pile de bonnes choses grandir. »</p>
                 <div className="testimonials-people">
                   <h6 className="testimonials-people-title">Nicki Golden</h6>
                   <span className="testimonials-people-sub_title">(Microsoft Ceo)</span>
@@ -204,7 +230,7 @@ const About = () => {
         <div className="item">
           <div className="brand-item">
             <a>
-              <img src="img/brand/001.png" alt="brand" />
+              <img src="img/brand/001.png" alt="smile" />
             </a>
           </div>
         </div>
@@ -212,7 +238,7 @@ const About = () => {
         <div className="item">
           <div className="brand-item">
             <a>
-              <img src="img/brand/002.png" alt="brand" />
+              <img src="img/brand/002.png" alt="jamie&annie" />
             </a>
           </div>
         </div>
@@ -220,7 +246,7 @@ const About = () => {
         <div className="item">
           <div className="brand-item">
             <a>
-              <img src="img/brand/003.png" alt="brand" />
+              <img src="img/brand/003.png" alt="mocku" />
             </a>
           </div>
         </div>
@@ -228,7 +254,7 @@ const About = () => {
         <div className="item">
           <div className="brand-item">
             <a>
-              <img src="img/brand/004.png" alt="brand" />
+              <img src="img/brand/004.png" alt="refresh" />
             </a>
           </div>
         </div>
@@ -236,7 +262,7 @@ const About = () => {
         <div className="item">
           <div className="brand-item">
             <a>
-              <img src="img/brand/005.png" alt="brand" />
+              <img src="img/brand/005.png" alt="iconic" />
             </a>
           </div>
         </div>
@@ -244,7 +270,7 @@ const About = () => {
         <div className="item">
           <div className="brand-item">
             <a>
-              <img src="img/brand/006.png" alt="brand" />
+              <img src="img/brand/006.png" alt="hipster" />
             </a>
           </div>
         </div>

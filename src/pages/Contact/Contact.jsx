@@ -19,7 +19,7 @@ const Contact = () => {
           <div className="col-12">
             <h1 className="breadcrumb-title">Nous contacter</h1>
             <nav className="breadcrumb-link">
-              <span><a href="home.html">Accueil</a></span>
+              <span><a href="/">Accueil</a></span>
               <span>Nous contacter</span>
             </nav>
           </div>
@@ -62,15 +62,15 @@ const Contact = () => {
             <div className="form-field-wrapper">
               <label>Adresse Postale</label>
               <p>
-                29 Shadow Brook Court Warwick,<br />
-                RI 02886
+                le village,<br />
+                07210 saint-vincent-de-barrès<br />
               </p>
             </div>
             <div className="form-field-wrapper">
               <label>JRD Ltd</label>
               <p>
                 Le village,<br />
-                072010 saint-vincent-de-barrès  
+                07210 saint-vincent-de-barrès  
               </p>
             </div>
             <div className="form-field-wrapper">
@@ -84,16 +84,12 @@ const Contact = () => {
               <label>Suivez-nous</label>
               <ul className="social large">
                 <li>
-                  <a href="#"><i className="fa fa-twitter" /></a>
+                  <a href="https://www.facebook.com/jeanrene.derimer.5/?locale=fr_FR" target="_blank" rel="noopener noreferrer"><i className="fa fa-facebook" /></a>
+               
                 </li>
+               
                 <li>
-                  <a href="#"><i className="fa fa-facebook" /></a>
-                </li>
-                <li>
-                  <a href="#"><i className="fa fa-google" /></a>
-                </li>
-                <li>
-                  <a href="#"><i className="fa fa-linkedin-square" /></a>
+                  <a href="https://www.linkedin.com/in/jean-rene-derimer-4641b2268/"><i className="fa fa-linkedin-square" /></a>
                 </li>
               </ul>
             </div>
