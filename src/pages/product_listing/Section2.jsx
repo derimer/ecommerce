@@ -28,13 +28,20 @@ const Section2 = () => {
             </form>
             {/* Product Filter */}
             <div className={filter === false ? "product-select-filter" : "product-select-filter filter-active"}>
-              <a href="javascript:void(0);" onClick={()=>{setfilter(!filter)}} className={filter === false ? "filter-menu-btn btn btn--gray" : "filter-menu-btn btn btn--gray active" }><i className="ti-filter left" />Filter</a>
-              {/*Filter Dropdown Menu*/}
-              <div className={filter === false ? "filterbar-dropdown-menu" : "filterbar-dropdown-menu filter-dropdown-menu-open"}
+              <button
+                type="button"
+                onClick={() => { setfilter(!filter); }}
+                className={filter === false ? "filter-menu-btn btn btn--gray" : "filter-menu-btn btn btn--gray active"}
               >
+                <i className="ti-filter left" />Filter
+              </button>
+              {/*Filter Dropdown Menu*/}
+              <div className={filter === false ? "filterbar-dropdown-menu" : "filterbar-dropdown-menu filter-dropdown-menu-open"}>
                 <div className="filterbar-dropdown-inner">
                   <h4 className="widget-title">Filter</h4>
-                  <span className="filter-close-icon" onClick={()=>{setfilter(false)}}><i className="ti-close" /></span>
+                  <span className="filter-close-icon" onClick={() => { setfilter(false); }}>
+                    <i className="ti-close" />
+                  </span>
                   <form>
                     <div className="form-field-wrapper">
                       <label>Categories</label>
@@ -101,25 +108,45 @@ const Section2 = () => {
               {/*Product Img*/}
               <div className="product-item-img">
                 {/*Image*/}
-                <a className="product-item-img-link">
+                <button type="button" className="product-item-img-link" style={{ background: 'none', border: 'none', padding: 0 }}>
                   <img src="img/products/01/01.jpg" alt="Product Item" />
-                </a>
+                </button>
                 {/*Add to Link*/}
                 <div className="add-to-link">
-                  <a className="btn btn--primary btn--sm">Add To Cart</a>
+                  <button type="button" className="btn btn--primary btn--sm">Add To Cart</button>
                 </div>
                 {/*Hover Icons*/}
                 <div className="hover-product-icon">
                   <div className="product-icon-btn-wrap">
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Quick View"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-search" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Whishlist"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-heart" />
+                    </button>
+                    <button type="button" className="btn-link" data-toggle="tooltip" data-placement="left" title="Add to Compare" style={{ background: 'none', border: 'none', padding: 0 }}>
+                      <i className="ti-reload" />
+                    </button>
                   </div>
                 </div>
               </div>
               {/*Product Content*/}
               <div className="product-item-content">
-                <div className="tag"><a href="#">Minimal</a></div>
+                <div className="tag"><a href="/#">Minimal</a></div>
                 <a href="product_detail.html" className="product-item-title"><span>chemisiers manches courtes</span></a>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -130,7 +157,7 @@ const Section2 = () => {
                   <div className="star-rating" title="Rated 4 out of 5">
                     <span style={{width: '60%'}} />
                   </div>
-                  <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                  <button type="button" className="product-rating-count" style={{ background: 'none', border: 'none', padding: 0 }}><span className="count">3</span> Reviews</button>
                 </div>
                 <p className="product-description">
                   When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic remaining essentially unchanged.
@@ -144,25 +171,52 @@ const Section2 = () => {
               {/*Product Img*/}
               <div className="product-item-img">
                 {/*Image*/}
-                <a className="product-item-img-link">
+                <button type="button" className="product-item-img-link" style={{ background: 'none', border: 'none', padding: 0 }}>
                   <img src="img/products/02/01.jpg" alt="Product Item" />
-                </a>
+                </button>
                 {/*Add to Link*/}
                 <div className="add-to-link">
-                  <a className="btn btn--primary btn--sm">Add To Cart</a>
+                  <button type="button" className="btn btn--primary btn--sm">Add To Cart</button>
                 </div>
                 {/*Hover Icons*/}
                 <div className="hover-product-icon">
                   <div className="product-icon-btn-wrap">
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Quick View"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-search" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Whishlist"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-heart" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Compare"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-reload" />
+                    </button>
                   </div>
                 </div>
               </div>
               {/*Product Content*/}
               <div className="product-item-content">
-                <div className="tag"><a href="#">Minimal</a></div>
+                <div className="tag"><button type="button" className="btn-link" style={{ background: 'none', border: 'none', padding: 0 }}>Minimal</button></div>
                 <a href="product_detail.html" className="product-item-title"><span>Short Sleeve Blouse</span></a>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -178,7 +232,7 @@ const Section2 = () => {
                   <div className="star-rating" itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                     <span style={{width: '60%'}} />
                   </div>
-                  <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                  <button type="button" className="product-rating-count" style={{ background: 'none', border: 'none', padding: 0 }}><span className="count">3</span> Reviews</button>
                 </div>
                 <p className="product-description">
                   When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic remaining essentially unchanged.
@@ -192,25 +246,60 @@ const Section2 = () => {
               {/*Product Img*/}
               <div className="product-item-img">
                 {/*Image*/}
-                <a className="product-item-img-link">
+                <button type="button" className="product-item-img-link" style={{ background: 'none', border: 'none', padding: 0 }}>
                   <img src="img/products/03/01.jpg" alt="Product Item" />
-                </a>
+                </button>
                 {/*Add to Link*/}
                 <div className="add-to-link">
-                  <a className="btn btn--primary btn--sm">Ajouter au paniert</a>
+                  <button type="button" className="btn btn--primary btn--sm">Ajouter au paniert</button>
                 </div>
                 {/*Hover Icons*/}
                 <div className="hover-product-icon">
                   <div className="product-icon-btn-wrap">
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Quick View"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-search" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Whishlist"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-heart" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Compare"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-reload" />
+                    </button>
                   </div>
                 </div>
               </div>
               {/*Product Content*/}
               <div className="product-item-content">
-                <div className="tag"><a href="#">Minimal</a></div>
+                <div className="tag">
+                  <button
+                    type="button"
+                    className="btn-link"
+                    style={{ background: 'none', border: 'none', padding: 0 }}
+                  >
+                    Minimal
+                  </button>
+                </div>
                 <a href="product_detail.html" className="product-item-title"><span>chemisier manches courtes</span></a>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -221,7 +310,9 @@ const Section2 = () => {
                   <div className="star-rating" title="Rated 4 out of 5">
                     <span style={{width: '60%'}} />
                   </div>
-                  <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                  <button type="button" className="product-rating-count" style={{ background: 'none', border: 'none', padding: 0 }}>
+                    <span className="count">3</span> Reviews
+                  </button>
                 </div>
                 <p className="product-description">
                   When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic remaining essentially unchanged.
@@ -235,25 +326,58 @@ const Section2 = () => {
               {/*Product Img*/}
               <div className="product-item-img">
                 {/*Image*/}
-                <a className="product-item-img-link">
+                <button type="button" className="product-item-img-link" style={{ background: 'none', border: 'none', padding: 0 }}>
                   <img src="img/products/04/01.jpg" alt="Product Item" />
-                </a>
+                </button>
                 {/*Add to Link*/}
                 <div className="add-to-link">
-                  <a className="btn btn--primary btn--sm">ajouter au panier</a>
+                  <button type="button" className="btn btn--primary btn--sm">ajouter au panier</button>
                 </div>
                 {/*Hover Icons*/}
                 <div className="hover-product-icon">
                   <div className="product-icon-btn-wrap">
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                    <button
+                      type="button"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Quick View"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-search" />
+                    </button>
+                    <button
+                      type="button"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Whishlist"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-heart" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Compare"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-reload" />
+                    </button>
                   </div>
                 </div>
               </div>
               {/*Product Content*/}
               <div className="product-item-content">
-                <div className="tag"><a href="#">Minimal</a></div>
+                <div className="tag">
+                  <button
+                    type="button"
+                    className="btn-link"
+                    style={{ background: 'none', border: 'none', padding: 0 }}
+                  >
+                    Minimal
+                  </button>
+                </div>
                 <a href="product_detail.html" className="product-item-title"><span>chemisiier manches courtes</span></a>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -268,7 +392,9 @@ const Section2 = () => {
                   <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                     <span style={{width: '60%'}} />
                   </div>
-                  <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                  <button type="button" className="product-rating-count" style={{ background: 'none', border: 'none', padding: 0 }}>
+                    <span className="count">3</span> Reviews
+                  </button>
                 </div>
                 <p className="product-description">
                   When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic remaining essentially unchanged.
@@ -282,25 +408,59 @@ const Section2 = () => {
               {/*Product Img*/}
               <div className="product-item-img">
                 {/*Image*/}
-                <a className="product-item-img-link">
+                <button type="button" className="product-item-img-link" style={{ background: 'none', border: 'none', padding: 0 }}>
                   <img src="img/products/05/01.jpg" alt="Product Item" />
-                </a>
+                </button>
                 {/*Add to Link*/}
                 <div className="add-to-link">
-                  <a className="btn btn--primary btn--sm">ajouter au paniert</a>
+                  <button type="button" className="btn btn--primary btn--sm">ajouter au paniert</button>
                 </div>
                 {/*Hover Icons*/}
                 <div className="hover-product-icon">
                   <div className="product-icon-btn-wrap">
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                    <button
+                      type="button"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Quick View"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-search" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Whishlist"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-heart" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Compare"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-reload" />
+                    </button>
                   </div>
                 </div>
               </div>
               {/*Product Content*/}
               <div className="product-item-content">
-                <div className="tag"><a href="#">Minimal</a></div>
+                <div className="tag">
+                  <button
+                    type="button"
+                    className="btn-link"
+                    style={{ background: 'none', border: 'none', padding: 0 }}
+                  >
+                    Minimal
+                  </button>
+                </div>
                 <a href="product_detail.html" className="product-item-title"><span>chemisiers manches courtes</span></a>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -311,7 +471,9 @@ const Section2 = () => {
                   <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                     <span style={{width: '60%'}} />
                   </div>
-                  <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                  <button type="button" className="product-rating-count" style={{ background: 'none', border: 'none', padding: 0 }}>
+                    <span className="count">3</span> Reviews
+                  </button>
                 </div>
                 <p className="product-description">
                   When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic remaining essentially unchanged.
@@ -325,25 +487,59 @@ const Section2 = () => {
               {/*Product Img*/}
               <div className="product-item-img">
                 {/*Image*/}
-                <a className="product-item-img-link">
+                <button type="button" className="product-item-img-link" style={{ background: 'none', border: 'none', padding: 0 }}>
                   <img src="img/products/06/01.jpg" alt="Product Item" />
-                </a>
+                </button>
                 {/*Add to Link*/}
                 <div className="add-to-link">
-                  <a className="btn btn--primary btn--sm">ajouter au panier</a>
+                  <button type="button" className="btn btn--primary btn--sm">ajouter au panier</button>
                 </div>
                 {/*Hover Icons*/}
                 <div className="hover-product-icon">
                   <div className="product-icon-btn-wrap">
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                    <button
+                      type="button"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Quick View"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-search" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Whishlist"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-heart" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Compare"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-reload" />
+                    </button>
                   </div>
                 </div>
               </div>
               {/*Product Content*/}
               <div className="product-item-content">
-                <div className="tag"><a href="#">Minimal</a></div>
+                <div className="tag">
+                  <button
+                    type="button"
+                    className="btn-link"
+                    style={{ background: 'none', border: 'none', padding: 0 }}
+                  >
+                    Minimal
+                  </button>
+                </div>
                 <a href="product_detail.html" className="product-item-title"><span>chemisier manches courtes</span></a>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -354,7 +550,9 @@ const Section2 = () => {
                   <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                     <span style={{width: '60%'}} />
                   </div>
-                  <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                  <button type="button" className="product-rating-count" style={{ background: 'none', border: 'none', padding: 0 }}>
+                    <span className="count">3</span> Reviews
+                  </button>
                 </div>
                 <p className="product-description">
                   When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic remaining essentially unchanged.
@@ -368,25 +566,58 @@ const Section2 = () => {
               {/*Product Img*/}
               <div className="product-item-img">
                 {/*Image*/}
-                <a className="product-item-img-link">
+                <button type="button" className="product-item-img-link" style={{ background: 'none', border: 'none', padding: 0 }}>
                   <img src="img/products/07/01.jpg" alt="Product Item" />
-                </a>
+                </button>
                 {/*Add to Link*/}
                 <div className="add-to-link">
-                  <a className="btn btn--primary btn--sm">ajouter au paniert</a>
+                  <button type="button" className="btn btn--primary btn--sm">ajouter au paniert</button>
                 </div>
                 {/*Hover Icons*/}
                 <div className="hover-product-icon">
                   <div className="product-icon-btn-wrap">
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                    <button
+                      type="button"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Quick View"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-search" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Whishlist"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-heart" />
+                    </button>
+                    <button
+                      type="button"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Compare"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-reload" />
+                    </button>
                   </div>
                 </div>
               </div>
               {/*Product Content*/}
               <div className="product-item-content">
-                <div className="tag"><a href="#">Minimal</a></div>
+                <div className="tag">
+                  <button
+                    type="button"
+                    className="btn-link"
+                    style={{ background: 'none', border: 'none', padding: 0 }}
+                  >
+                    Minimal
+                  </button>
+                </div>
                 <a href="product_detail.html" className="product-item-title"><span>chemisier manches courtes</span></a>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -397,7 +628,9 @@ const Section2 = () => {
                   <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                     <span style={{width: '60%'}} />
                   </div>
-                  <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                  <button type="button" className="product-rating-count" style={{ background: 'none', border: 'none', padding: 0 }}>
+                    <span className="count">3</span> Reviews
+                  </button>
                 </div>
                 <p className="product-description">
                   When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic remaining essentially unchanged.
@@ -411,25 +644,59 @@ const Section2 = () => {
               {/*Product Img*/}
               <div className="product-item-img">
                 {/*Image*/}
-                <a className="product-item-img-link">
+                <button type="button" className="product-item-img-link" style={{ background: 'none', border: 'none', padding: 0 }}>
                   <img src="img/products/08/01.jpg" alt="Product Item" />
-                </a>
+                </button>
                 {/*Add to Link*/}
                 <div className="add-to-link">
-                  <a className="btn btn--primary btn--sm">ajouter au panier</a>
+                  <button type="button" className="btn btn--primary btn--sm">ajouter au panier</button>
                 </div>
                 {/*Hover Icons*/}
                 <div className="hover-product-icon">
                   <div className="product-icon-btn-wrap">
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                    <button
+                      type="button"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Quick View"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-search" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Whishlist"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-heart" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Compare"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-reload" />
+                    </button>
                   </div>
                 </div>
               </div>
               {/*Product Content*/}
               <div className="product-item-content">
-                <div className="tag"><a href="#">Minimal</a></div>
+                <div className="tag">
+                  <button
+                    type="button"
+                    className="btn-link"
+                    style={{ background: 'none', border: 'none', padding: 0 }}
+                  >
+                    Minimal
+                  </button>
+                </div>
                 <a href="product_detail.html" className="product-item-title"><span>chemisier manches courtes </span></a>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -440,7 +707,9 @@ const Section2 = () => {
                   <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                     <span style={{width: '60%'}} />
                   </div>
-                  <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                  <button type="button" className="product-rating-count" style={{ background: 'none', border: 'none', padding: 0 }}>
+                    <span className="count">3</span> Reviews
+                  </button>
                 </div>
                 <p className="product-description">
                   When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic remaining essentially unchanged.
@@ -454,25 +723,60 @@ const Section2 = () => {
               {/*Product Img*/}
               <div className="product-item-img">
                 {/*Image*/}
-                <a className="product-item-img-link">
+                <button type="button" className="product-item-img-link" style={{ background: 'none', border: 'none', padding: 0 }}>
                   <img src="img/products/09/01.jpg" alt="Product Item" />
-                </a>
+                </button>
                 {/*Add to Link*/}
                 <div className="add-to-link">
-                  <a className="btn btn--primary btn--sm">ajouter au panier</a>
+                  <button type="button" className="btn btn--primary btn--sm">ajouter au panier</button>
                 </div>
                 {/*Hover Icons*/}
                 <div className="hover-product-icon">
                   <div className="product-icon-btn-wrap">
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Quick View"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-search" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Whishlist"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-heart" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Compare"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-reload" />
+                    </button>
                   </div>
                 </div>
               </div>
               {/*Product Content*/}
               <div className="product-item-content">
-                <div className="tag"><a href="#">Minimal</a></div>
+                <div className="tag">
+                  <button
+                    type="button"
+                    className="btn-link"
+                    style={{ background: 'none', border: 'none', padding: 0 }}
+                  >
+                    Minimal
+                  </button>
+                </div>
                 <a href="product_detail.html" className="product-item-title"><span>chemisier manches courtes </span></a>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -483,7 +787,9 @@ const Section2 = () => {
                   <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                     <span style={{width: '60%'}} />
                   </div>
-                  <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                  <button type="button" className="product-rating-count" style={{ background: 'none', border: 'none', padding: 0 }}>
+                    <span className="count">3</span> Reviews
+                  </button>
                 </div>
                 <p className="product-description">
                   When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic remaining essentially unchanged.
@@ -497,25 +803,60 @@ const Section2 = () => {
               {/*Product Img*/}
               <div className="product-item-img">
                 {/*Image*/}
-                <a className="product-item-img-link">
+                <button type="button" className="product-item-img-link" style={{ background: 'none', border: 'none', padding: 0 }}>
                   <img src="img/products/10/01.jpg" alt="Product Item" />
-                </a>
+                </button>
                 {/*Add to Link*/}
                 <div className="add-to-link">
-                  <a className="btn btn--primary btn--sm">ajouter au panier</a>
+                  <button type="button" className="btn btn--primary btn--sm">ajouter au panier</button>
                 </div>
                 {/*Hover Icons*/}
                 <div className="hover-product-icon">
                   <div className="product-icon-btn-wrap">
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Quick View"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-search" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Whishlist"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-heart" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Compare"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-reload" />
+                    </button>
                   </div>
                 </div>
               </div>
               {/*Product Content*/}
               <div className="product-item-content">
-                <div className="tag"><a href="#">Minimal</a></div>
+                <div className="tag">
+                  <button
+                    type="button"
+                    className="btn-link"
+                    style={{ background: 'none', border: 'none', padding: 0 }}
+                  >
+                    Minimal
+                  </button>
+                </div>
                 <a href="product_detail.html" className="product-item-title"><span>chemisier manches courtes </span></a>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -526,7 +867,9 @@ const Section2 = () => {
                   <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                     <span style={{width: '60%'}} />
                   </div>
-                  <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                  <button type="button" className="product-rating-count" style={{ background: 'none', border: 'none', padding: 0 }}>
+                    <span className="count">3</span> Reviews
+                  </button>
                 </div>
                 <p className="product-description">
                   When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic remaining essentially unchanged.
@@ -540,25 +883,60 @@ const Section2 = () => {
               {/*Product Img*/}
               <div className="product-item-img">
                 {/*Image*/}
-                <a className="product-item-img-link">
+                <button type="button" className="product-item-img-link" style={{ background: 'none', border: 'none', padding: 0 }}>
                   <img src="img/products/11/01.jpg" alt="Product Item" />
-                </a>
+                </button>
                 {/*Add to Link*/}
                 <div className="add-to-link">
-                  <a className="btn btn--primary btn--sm">ajouter au panier</a>
+                  <button type="button" className="btn btn--primary btn--sm">ajouter au panier</button>
                 </div>
                 {/*Hover Icons*/}
                 <div className="hover-product-icon">
                   <div className="product-icon-btn-wrap">
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Quick View"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-search" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Whishlist"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-heart" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Compare"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-reload" />
+                    </button>
                   </div>
                 </div>
               </div>
               {/*Product Content*/}
               <div className="product-item-content">
-                <div className="tag"><a href="#">Minimal</a></div>
+                <div className="tag">
+                  <button
+                    type="button"
+                    className="btn-link"
+                    style={{ background: 'none', border: 'none', padding: 0 }}
+                  >
+                    Minimal
+                  </button>
+                </div>
                 <a href="product_detail.html" className="product-item-title"><span>chemisier manches courtes </span></a>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -569,7 +947,9 @@ const Section2 = () => {
                   <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                     <span style={{width: '60%'}} />
                   </div>
-                  <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                  <button type="button" className="product-rating-count" style={{ background: 'none', border: 'none', padding: 0 }}>
+                    <span className="count">3</span> Reviews
+                  </button>
                 </div>
                 <p className="product-description">
                   When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic remaining essentially unchanged.
@@ -583,25 +963,59 @@ const Section2 = () => {
               {/*Product Img*/}
               <div className="product-item-img">
                 {/*Image*/}
-                <a className="product-item-img-link">
+                <button type="button" className="product-item-img-link" style={{ background: 'none', border: 'none', padding: 0 }}>
                   <img src="img/products/12/01.jpg" alt="Product Item" />
-                </a>
+                </button>
                 {/*Add to Link*/}
                 <div className="add-to-link">
-                  <a className="btn btn--primary btn--sm">ajouter au panier</a>
+                  <button type="button" className="btn btn--primary btn--sm">ajouter au panier</button>
                 </div>
                 {/*Hover Icons*/}
                 <div className="hover-product-icon">
                   <div className="product-icon-btn-wrap">
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                    <button
+                      type="button"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Quick View"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-search" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Whishlist"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-heart" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Compare"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-reload" />
+                    </button>
                   </div>
                 </div>
               </div>
               {/*Product Content*/}
               <div className="product-item-content">
-                <div className="tag"><a href="#">Minimal</a></div>
+                <div className="tag">
+                  <button
+                    type="button"
+                    className="btn-link"
+                    style={{ background: 'none', border: 'none', padding: 0 }}
+                  >
+                    Minimal
+                  </button>
+                </div>
                 <a href="product_detail.html" className="product-item-title"><span>chemisier manches courtes </span></a>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -612,7 +1026,9 @@ const Section2 = () => {
                   <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                     <span style={{width: '60%'}} />
                   </div>
-                  <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                  <button type="button" className="product-rating-count" style={{ background: 'none', border: 'none', padding: 0 }}>
+                    <span className="count">3</span> Reviews
+                  </button>
                 </div>
                 <p className="product-description">
                   When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic remaining essentially unchanged.
@@ -626,25 +1042,59 @@ const Section2 = () => {
               {/*Product Img*/}
               <div className="product-item-img">
                 {/*Image*/}
-                <a className="product-item-img-link">
+                <button type="button" className="product-item-img-link" style={{ background: 'none', border: 'none', padding: 0 }}>
                   <img src="img/products/13/01.jpg" alt="Product Item" />
-                </a>
+                </button>
                 {/*Add to Link*/}
                 <div className="add-to-link">
-                  <a className="btn btn--primary btn--sm">ajouter au panier</a>
+                  <button type="button" className="btn btn--primary btn--sm">ajouter au panier</button>
                 </div>
                 {/*Hover Icons*/}
                 <div className="hover-product-icon">
                   <div className="product-icon-btn-wrap">
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                    <button
+                      type="button"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Quick View"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-search" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Whishlist"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-heart" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Compare"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-reload" />
+                    </button>
                   </div>
                 </div>
               </div>
               {/*Product Content*/}
               <div className="product-item-content">
-                <div className="tag"><a href="#">Minimal</a></div>
+                <div className="tag">
+                  <button
+                    type="button"
+                    className="btn-link"
+                    style={{ background: 'none', border: 'none', padding: 0 }}
+                  >
+                    Minimal
+                  </button>
+                </div>
                 <a href="product_detail.html" className="product-item-title"><span>Short Sleeve Blouse</span></a>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -655,7 +1105,9 @@ const Section2 = () => {
                   <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                     <span style={{width: '60%'}} />
                   </div>
-                  <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                  <button type="button" className="product-rating-count" style={{ background: 'none', border: 'none', padding: 0 }}>
+                    <span className="count">3</span> Reviews
+                  </button>
                 </div>
                 <p className="product-description">
                   When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic remaining essentially unchanged.
@@ -669,25 +1121,60 @@ const Section2 = () => {
               {/*Product Img*/}
               <div className="product-item-img">
                 {/*Image*/}
-                <a className="product-item-img-link">
+                <button type="button" className="product-item-img-link" style={{ background: 'none', border: 'none', padding: 0 }}>
                   <img src="img/products/14/01.jpg" alt="Product Item" />
-                </a>
+                </button>
                 {/*Add to Link*/}
                 <div className="add-to-link">
-                  <a className="btn btn--primary btn--sm">Add To Cart</a>
+                  <button type="button" className="btn btn--primary btn--sm">Add To Cart</button>
                 </div>
                 {/*Hover Icons*/}
                 <div className="hover-product-icon">
                   <div className="product-icon-btn-wrap">
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Quick View"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-search" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Whishlist"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-heart" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Compare"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-reload" />
+                    </button>
                   </div>
                 </div>
               </div>
               {/*Product Content*/}
               <div className="product-item-content">
-                <div className="tag"><a href="#">Minimal</a></div>
+                <div className="tag">
+                  <button
+                    type="button"
+                    className="btn-link"
+                    style={{ background: 'none', border: 'none', padding: 0 }}
+                  >
+                    Minimal
+                  </button>
+                </div>
                 <a href="product_detail.html" className="product-item-title"><span>Short Sleeve Blouse</span></a>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -698,7 +1185,9 @@ const Section2 = () => {
                   <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                     <span style={{width: '60%'}} />
                   </div>
-                  <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                  <button type="button" className="product-rating-count" style={{ background: 'none', border: 'none', padding: 0 }}>
+                    <span className="count">3</span> Reviews
+                  </button>
                 </div>
                 <p className="product-description">
                   When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic remaining essentially unchanged.
@@ -712,25 +1201,60 @@ const Section2 = () => {
               {/*Product Img*/}
               <div className="product-item-img">
                 {/*Image*/}
-                <a className="product-item-img-link">
+                <button type="button" className="product-item-img-link" style={{ background: 'none', border: 'none', padding: 0 }}>
                   <img src="img/products/02/01.jpg" alt="Product Item" />
-                </a>
+                </button>
                 {/*Add to Link*/}
                 <div className="add-to-link">
-                  <a className="btn btn--primary btn--sm">Add To Cart</a>
+                  <button type="button" className="btn btn--primary btn--sm">Add To Cart</button>
                 </div>
                 {/*Hover Icons*/}
                 <div className="hover-product-icon">
                   <div className="product-icon-btn-wrap">
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Quick View"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-search" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Whishlist"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-heart" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Compare"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-reload" />
+                    </button>
                   </div>
                 </div>
               </div>
               {/*Product Content*/}
               <div className="product-item-content">
-                <div className="tag"><a href="#">Minimal</a></div>
+                <div className="tag">
+                  <button
+                    type="button"
+                    className="btn-link"
+                    style={{ background: 'none', border: 'none', padding: 0 }}
+                  >
+                    Minimal
+                  </button>
+                </div>
                 <a href="product_detail.html" className="product-item-title"><span>Short Sleeve Blouse</span></a>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -741,7 +1265,9 @@ const Section2 = () => {
                   <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                     <span style={{width: '60%'}} />
                   </div>
-                  <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                  <button type="button" className="product-rating-count" style={{ background: 'none', border: 'none', padding: 0 }}>
+                    <span className="count">3</span> Reviews
+                  </button>
                 </div>
                 <p className="product-description">
                   When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic remaining essentially unchanged.
@@ -755,25 +1281,60 @@ const Section2 = () => {
               {/*Product Img*/}
               <div className="product-item-img">
                 {/*Image*/}
-                <a className="product-item-img-link">
+                <button type="button" className="product-item-img-link" style={{ background: 'none', border: 'none', padding: 0 }}>
                   <img src="img/products/03/01.jpg" alt="Product Item" />
-                </a>
+                </button>
                 {/*Add to Link*/}
                 <div className="add-to-link">
-                  <a className="btn btn--primary btn--sm">Add To Cart</a>
+                  <button type="button" className="btn btn--primary btn--sm">Add To Cart</button>
                 </div>
                 {/*Hover Icons*/}
                 <div className="hover-product-icon">
                   <div className="product-icon-btn-wrap">
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Quick View"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-search" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Whishlist"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-heart" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Compare"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-reload" />
+                    </button>
                   </div>
                 </div>
               </div>
               {/*Product Content*/}
               <div className="product-item-content">
-                <div className="tag"><a href="#">Minimal</a></div>
+                <div className="tag">
+                  <button
+                    type="button"
+                    className="btn-link"
+                    style={{ background: 'none', border: 'none', padding: 0 }}
+                  >
+                    Minimal
+                  </button>
+                </div>
                 <a href="product_detail.html" className="product-item-title"><span>Short Sleeve Blouse</span></a>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -784,7 +1345,9 @@ const Section2 = () => {
                   <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                     <span style={{width: '60%'}} />
                   </div>
-                  <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                  <button type="button" className="product-rating-count" style={{ background: 'none', border: 'none', padding: 0 }}>
+                    <span className="count">3</span> Reviews
+                  </button>
                 </div>
                 <p className="product-description">
                   When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic remaining essentially unchanged.
@@ -798,25 +1361,59 @@ const Section2 = () => {
               {/*Product Img*/}
               <div className="product-item-img">
                 {/*Image*/}
-                <a className="product-item-img-link">
+                <button type="button" className="product-item-img-link" style={{ background: 'none', border: 'none', padding: 0 }}>
                   <img src="img/products/04/01.jpg" alt="Product Item" />
-                </a>
+                </button>
                 {/*Add to Link*/}
                 <div className="add-to-link">
-                  <a className="btn btn--primary btn--sm">Add To Cart</a>
+                  <button type="button" className="btn btn--primary btn--sm">Add To Cart</button>
                 </div>
                 {/*Hover Icons*/}
                 <div className="hover-product-icon">
                   <div className="product-icon-btn-wrap">
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                    <button
+                      type="button"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Quick View"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-search" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Whishlist"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-heart" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Compare"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-reload" />
+                    </button>
                   </div>
                 </div>
               </div>
               {/*Product Content*/}
               <div className="product-item-content">
-                <div className="tag"><a href="#">Minimal</a></div>
+                <div className="tag">
+                  <button
+                    type="button"
+                    className="btn-link"
+                    style={{ background: 'none', border: 'none', padding: 0 }}
+                  >
+                    Minimal
+                  </button>
+                </div>
                 <a href="product_detail.html" className="product-item-title"><span>Short Sleeve Blouse</span></a>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -827,7 +1424,9 @@ const Section2 = () => {
                   <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                     <span style={{width: '60%'}} />
                   </div>
-                  <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                  <button type="button" className="product-rating-count" style={{ background: 'none', border: 'none', padding: 0 }}>
+                    <span className="count">3</span> Reviews
+                  </button>
                 </div>
                 <p className="product-description">
                   When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic remaining essentially unchanged.
@@ -841,25 +1440,60 @@ const Section2 = () => {
               {/*Product Img*/}
               <div className="product-item-img">
                 {/*Image*/}
-                <a className="product-item-img-link">
+                <button type="button" className="product-item-img-link" style={{ background: 'none', border: 'none', padding: 0 }}>
                   <img src="img/products/05/01.jpg" alt="Product Item" />
-                </a>
+                </button>
                 {/*Add to Link*/}
                 <div className="add-to-link">
-                  <a className="btn btn--primary btn--sm">Add To Cart</a>
+                  <button type="button" className="btn btn--primary btn--sm">Add To Cart</button>
                 </div>
                 {/*Hover Icons*/}
                 <div className="hover-product-icon">
                   <div className="product-icon-btn-wrap">
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                    <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Quick View"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-search" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Whishlist"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-heart" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Add to Compare"
+                      style={{ background: 'none', border: 'none', padding: 0 }}
+                    >
+                      <i className="ti-reload" />
+                    </button>
                   </div>
                 </div>
               </div>
               {/*Product Content*/}
               <div className="product-item-content">
-                <div className="tag"><a href="#">Minimal</a></div>
+                <div className="tag">
+                  <button
+                    type="button"
+                    className="btn-link"
+                    style={{ background: 'none', border: 'none', padding: 0 }}
+                  >
+                    Minimal
+                  </button>
+                </div>
                 <a href="product_detail.html" className="product-item-title"><span>Short Sleeve Blouse</span></a>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -870,7 +1504,9 @@ const Section2 = () => {
                   <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                     <span style={{width: '60%'}} />
                   </div>
-                  <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                  <button type="button" className="product-rating-count" style={{ background: 'none', border: 'none', padding: 0 }}>
+                    <span className="count">3</span> Reviews
+                  </button>
                 </div>
                 <p className="product-description">
                   When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic remaining essentially unchanged.
@@ -888,22 +1524,22 @@ const Section2 = () => {
                                       <a href="#" class="prev page-number"><i class="fa fa-angle-double-left"></i></a>
                                   </li>*/}
               <li>
-                <a href="#" className="page-number current">1</a>
+                <button type="button" className="page-number current" aria-current="page">1</button>
               </li>
               <li>
-                <a href="#" className="page-number">2</a>
+                <button type="button" className="page-number">2</button>
               </li>
               <li>
-                <a href="#" className="page-number">3</a>
+                <button type="button" className="page-number">3</button>
               </li>
               <li>
                 <span className="page-number dots">...</span>
               </li>
               <li>
-                <a href="#" className="page-number">29</a>
+                <button type="button" className="page-number">29</button>
               </li>
               <li>
-                <a href="#" className="next page-number"><i className="fa fa-angle-double-right" /></a>
+                <button type="button" className="next page-number" aria-label="Next page"><i className="fa fa-angle-double-right" /></button>
               </li>
             </ul>
           </div>
@@ -922,11 +1558,51 @@ const Section2 = () => {
               <ul className="menu">
                 <li className="menu-item main-accordionIcon" onClick={()=>{setactivefilter('Men')}}><a href="#" >Men</a>
                   <ul className={activefilter === "Men" ? "sub-menu" : "sub-menu d-none" }>
-                    <li className="menu-item"><a href="#">New In Clothing</a></li>
-                        <li className="menu-item"><a href="#">New In Shoes</a></li>
-                        <li className="menu-item"><a href="#">New In Bags</a></li>
-                        <li className="menu-item"><a href="#">New In Watches</a></li>
-                        <li className="menu-item"><a href="#">New In Accessories</a></li>
+                    <li className="menu-item">
+                      <button
+                        type="button"
+                        className="btn-link"
+                        style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}
+                      >
+                        New In Clothing
+                      </button>
+                    </li>
+                        <li className="menu-item">
+                          <button
+                            type="button"
+                            className="btn-link"
+                            style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}
+                          >
+                            New In Shoes
+                          </button>
+                        </li>
+                        <li className="menu-item">
+                          <button
+                            type="button"
+                            className="btn-link"
+                            style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}
+                          >
+                            New In Bags
+                          </button>
+                        </li>
+                        <li className="menu-item">
+                          <button
+                            type="button"
+                            className="btn-link"
+                            style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}
+                          >
+                            New In Watches
+                          </button>
+                        </li>
+                        <li className="menu-item">
+                          <button
+                            type="button"
+                            className="btn-link"
+                            style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}
+                          >
+                            New In Accessories
+                          </button>
+                        </li>
                   
                   </ul>
                 </li>
@@ -999,12 +1675,12 @@ const Section2 = () => {
             {/* Content */}
             <div className="widget-content">
               <ul>
-                <li><a href="#">Black</a><span className="count">(12)</span></li>
-                <li><a href="#">Green</a><span className="count">(24)</span></li>
-                <li><a href="#">Pink</a><span className="count">(08)</span></li>
-                <li><a href="#">Red</a><span className="count">(04)</span></li>
-                <li><a href="#">Whie</a><span className="count">(35)</span></li>
-                <li><a href="#">Blue</a><span className="count">(49)</span></li>
+                <li><button type="button" className="btn-link" style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}>Black</button><span className="count">(12)</span></li>
+                <li><button type="button" className="btn-link" style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}>Green</button><span className="count">(24)</span></li>
+                <li><button type="button" className="btn-link" style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}>Pink</button><span className="count">(08)</span></li>
+                <li><button type="button" className="btn-link" style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}>Red</button><span className="count">(04)</span></li>
+                <li><button type="button" className="btn-link" style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}>Whie</button><span className="count">(35)</span></li>
+                <li><button type="button" className="btn-link" style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}>Blue</button><span className="count">(49)</span></li>
               </ul>
             </div>
             {/* End Content */}
@@ -1018,12 +1694,66 @@ const Section2 = () => {
             {/* Content */}
             <div className="widget-content">
               <ul>
-                <li><a href="#">Big</a><span className="count">(05)</span></li>
-                <li><a href="#">L</a><span className="count">(09)</span></li>
-                <li><a href="#">M</a><span className="count">(12)</span></li>
-                <li><a href="#">Small</a><span className="count">(04)</span></li>
-                <li><a href="#">XL</a><span className="count">(29)</span></li>
-                <li><a href="#">XXL</a><span className="count">(43)</span></li>
+                <li>
+                  <button
+                    type="button"
+                    className="btn-link"
+                    style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}
+                  >
+                    Big
+                  </button>
+                  <span className="count">(05)</span>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    className="btn-link"
+                    style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}
+                  >
+                    L
+                  </button>
+                  <span className="count">(09)</span>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    className="btn-link"
+                    style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}
+                  >
+                    M
+                  </button>
+                  <span className="count">(12)</span>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    className="btn-link"
+                    style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}
+                  >
+                    Small
+                  </button>
+                  <span className="count">(04)</span>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    className="btn-link"
+                    style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}
+                  >
+                    XL
+                  </button>
+                  <span className="count">(29)</span>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    className="btn-link"
+                    style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}
+                  >
+                    XXL
+                  </button>
+                  <span className="count">(43)</span>
+                </li>
               </ul>
             </div>
             {/* End Content */}
@@ -1036,13 +1766,51 @@ const Section2 = () => {
             {/*End Title*/}
             {/* Content */}
             <div className="widget-content tagcloud">
-              <a className="tagcloud-link" href="#">Jackets</a>
-              <a className="tagcloud-link" href="#">Kid Fashion</a>
-              <a className="tagcloud-link" href="#">Responsive</a>
-              <a className="tagcloud-link" href="#">Shirts</a>
-              <a className="tagcloud-link" href="#">T-Shirts</a>
-              <a className="tagcloud-link" href="#">Shoes</a>
-              <a className="tagcloud-link" href="#">Glasses</a>
+              <button
+                type="button"
+                className="tagcloud-link"
+                style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}
+              >
+                Jackets
+              </button>
+              <button type="button" className="tagcloud-link" style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}>Kid Fashion</button>
+              <button
+                type="button"
+                className="tagcloud-link"
+                style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}
+              >
+                Responsive
+              </button>
+              <button
+                type="button"
+                className="tagcloud-link"
+                style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}
+              >
+                Shirts
+              </button>
+               <button
+                type="button"
+                className="tagcloud-link"
+                style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}
+              >
+                T-Shirts
+              </button>
+               <button
+                type="button"
+                className="tagcloud-link"
+                style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}
+              >
+                Shoes
+              </button>
+              <button
+                type="button"
+                className="tagcloud-link"
+                style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}
+              >
+                Glasses
+              </button>
+              
+            
             </div>
             {/* End Content */}
           </div>
@@ -1057,8 +1825,8 @@ const Section2 = () => {
               <ul className="product-list-widget">
                 {/*Item*/}
                 <li className="product-item">
-                  <a className="product-item-img">
-                    <img src="img/products/07/01.jpg" alt="Mazaar" />
+                  <a className="product-item-img" href="img/products/07/01.jpg">
+                    <img src="img/products/07/01.jpg" alt="jrd" />
                   </a>
                   <div className="product-item-content">
                     <a className="product-item-title" href="product_detail.html">chemisier manches courtes femme</a>
@@ -1071,14 +1839,15 @@ const Section2 = () => {
                       <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                         <span style={{width: '100%'}} />
                       </div>
-                      <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                      {'eslint-disable-next-line jsx-a11y/anchor-is-valid'}
+                      <a href="/Home" className="product-rating-count"><span className="count">3</span> Reviews</a>
                     </div>
                   </div>
                 </li>
                 {/*Item*/}
                 <li className="product-item">
-                  <a className="product-item-img">
-                    <img src="img/products/08/01.jpg" alt="Mazaar" />
+                  <a className="product-item-img" href="img/products/08/01.jpg">
+                    <img src="img/products/08/01.jpg" alt="jrd" />
                   </a>
                   <div className="product-item-content">
                     <a className="product-item-title" href="product_detail.html">Man Short Sleeve Blouse</a>
@@ -1091,14 +1860,14 @@ const Section2 = () => {
                       <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                         <span style={{width: '100%'}} />
                       </div>
-                      <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                      <a href="/" className="product-rating-count"><span className="count">3</span> Reviews</a>
                     </div>
                   </div>
                 </li>
                 {/*Item*/}
                 <li className="product-item">
-                  <a className="product-item-img">
-                    <img src="img/products/09/01.jpg" alt="Mazaar" />
+                  <a className="product-item-img" href="img/products/09/01.jpg">
+                    <img src="img/products/09/01.jpg" alt="jrd" />
                   </a>
                   <div className="product-item-content">
                     <a className="product-item-title" href="product_detail.html">chemisier manches courtes homme</a>
@@ -1115,7 +1884,7 @@ const Section2 = () => {
                       <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                         <span style={{width: '80%'}} />
                       </div>
-                      <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                      <a href="/" className="product-rating-count"><span className="count">3</span> Reviews</a>
                     </div>
                   </div>
                 </li>
@@ -1128,7 +1897,7 @@ const Section2 = () => {
           <div className="widget widget_media_image">
             {/* Content */}
             <div className="widget-content">
-              <a href="#" className="banner-item">
+              <a href="img/banner/widget_banner01.jpg" className="banner-item">
                 <img src="img/banner/widget_banner01.jpg" alt="banner" /></a>
             </div>
             {/* End Content */}
