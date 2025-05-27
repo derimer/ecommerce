@@ -11,6 +11,7 @@ const Header = () => {
       className="header header--sticky"
       data-header-hover="true"
     >
+     
       {/*Header Navigation*/}
       <nav id="navigation" className="header-nav">
         <div className="container-fluid">
@@ -21,6 +22,7 @@ const Header = () => {
                 <img src="img/jrd.png" className="logo-dark" alt="JRD" />
                 <img src="img/jrd.png" className="logo-light" alt="JRD" />
               </Link>
+               <h1 className="stamp">Vintage Fashion Senior</h1>
             </div>
             {/*End Logo*/}
 

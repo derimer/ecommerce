@@ -1,40 +1,13 @@
 import React from "react";
 import OwlCarousel from "react-owl-carousel";
+import { Link } from "react-router-dom";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const Section5 = () => {
   return (
     <>
-
-<div className="container customer-testimonials-section">
-  <div className="row">
-    <div className="col-lg-8 mx-lg-auto">
-      <div className="testimonials-slider owl-carousel owl-theme">
-        <div className="item">
-          <div className="testimonials-item">
-            <div className="testimonials-icon"><i className="ti-quote-left" /></div>
-            <p className="testimonials-quote">“There's plenty of money out there. They print more every day. But this ticket, there's only five of them in the whole world, and that's all there's ever going to be. Only a dummy would give this up for something as common money. Are you a dummy?”</p>
-            <div className="testimonials-people">
-              <h6 className="testimonials-people-title">Anthony T. Hincks</h6>
-              <span className="testimonials-people-sub_title">(Apple Founder)</span>
-            </div>
-          </div>
-        </div>
-        <div className="item">
-          <div className="testimonials-item">
-            <div className="testimonials-icon"><i className="ti-quote-left" /></div>
-            <p className="testimonials-quote">“So, what if, instead of thinking about solving your whole life, you just think about adding additional good things. One at a time. Just let your pile of good things grow”</p>
-            <div className="testimonials-people">
-              <h6 className="testimonials-people-title">Nicki Golden</h6>
-              <span className="testimonials-people-sub_title">(Microsoft Ceo)</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+      {/* ...autres sections... */}
 
       <section className="sec-padding bg--secondary">
         <div className="container">
@@ -57,9 +30,9 @@ const Section5 = () => {
           >
             <div className="item">
               <div className="review-item">
-                <a href="#" className="review-author-name">
+                <span className="review-author-name">
                   Ronald Dahi
-                </a>
+                </span>
                 <div className="review-ratting">
                   <div
                     className="star-rating"
@@ -70,9 +43,9 @@ const Section5 = () => {
                   >
                     <span style={{ width: "60%" }} />
                   </div>
-                  <a href="#" className="product-rating-count">
+                  <span className="product-rating-count">
                     <span className="count">(3)</span>
-                  </a>
+                  </span>
                 </div>
                 <h5 className="review-title">Excellent Produit</h5>
                 <p className="review-description">
@@ -83,9 +56,9 @@ const Section5 = () => {
             </div>
             <div className="item">
               <div className="review-item">
-                <a href="#" className="review-author-name">
+                <span className="review-author-name">
                   Logan Villeda
-                </a>
+                </span>
                 <div className="review-ratting">
                   <div
                     className="star-rating"
@@ -96,9 +69,9 @@ const Section5 = () => {
                   >
                     <span style={{ width: "100%" }} />
                   </div>
-                  <a href="#" className="product-rating-count">
+                  <span className="product-rating-count">
                     <span className="count">(5)</span>
-                  </a>
+                  </span>
                 </div>
                 <h5 className="review-title">merveilleux</h5>
                 <p className="review-description">Bravo! 👍</p>
@@ -106,9 +79,9 @@ const Section5 = () => {
             </div>
             <div className="item">
               <div className="review-item">
-                <a href="#" className="review-author-name">
+                <span className="review-author-name">
                   Mariam Phegley
-                </a>
+                </span>
                 <div className="review-ratting">
                   <div
                     className="star-rating"
@@ -119,9 +92,9 @@ const Section5 = () => {
                   >
                     <span style={{ width: "100%" }} />
                   </div>
-                  <a href="#" className="product-rating-count">
+                  <span className="product-rating-count">
                     <span className="count">(5)</span>
-                  </a>
+                  </span>
                 </div>
                 <h5 className="review-title">Nous l'adorons. Merci</h5>
                 <p className="review-description">
@@ -133,9 +106,9 @@ const Section5 = () => {
             </div>
             <div className="item">
               <div className="review-item">
-                <a href="#" className="review-author-name">
+                <span className="review-author-name">
                   Joana Soltis
-                </a>
+                </span>
                 <div className="review-ratting">
                   <div
                     className="star-rating"
@@ -146,9 +119,9 @@ const Section5 = () => {
                   >
                     <span style={{ width: "100%" }} />
                   </div>
-                  <a href="#" className="product-rating-count">
+                  <span className="product-rating-count">
                     <span className="count">(5)</span>
-                  </a>
+                  </span>
                 </div>
                 <h5 className="review-title">J'aime ce produit</h5>
                 <p className="review-description">
@@ -160,9 +133,9 @@ const Section5 = () => {
             </div>
             <div className="item">
               <div className="review-item">
-                <a href="#" className="review-author-name">
+                <span className="review-author-name">
                   Francie Maris
-                </a>
+                </span>
                 <div className="review-ratting">
                   <div
                     className="star-rating"
@@ -173,9 +146,9 @@ const Section5 = () => {
                   >
                     <span style={{ width: "100%" }} />
                   </div>
-                  <a href="#" className="product-rating-count">
+                  <span className="product-rating-count">
                     <span className="count">(5)</span>
-                  </a>
+                  </span>
                 </div>
                 <h5 className="review-title">Mon produit favori!</h5>
                 <p className="review-description">Mon produit favori !</p>
@@ -244,7 +217,7 @@ const Section5 = () => {
         <div className="container">
           <div className="page-head">
             <span className="page-sub-title">Nouvelles tendances</span>
-            <h2 className="page-title">Dernières nouvelles</h2>
+            <h2 className="page-title">Dernières nouveautés</h2>
           </div>
         </div>
         <div className="container">
@@ -262,24 +235,24 @@ const Section5 = () => {
             <div className="item">
               <div className="blog-item">
                 <div className="blog-item-image">
-                  <a href="blog_single.html" className="blog-img-link">
-                    <img src="img/blog_img/001.jpg" alt="blog image" />
-                  </a>
+                  <Link to="/blog/006" className="blog-img-link">
+                    <img src="img/blog_img/006.jpg" alt="blog image1" />
+                  </Link>
                 </div>
                 <div className="blog-item-content">
                   <div className="tag">
-                    <a href="#">Fashion</a>
-                    <a href="#">Cupple</a>
+                    <span>Fashion</span>
+                    <span>Cupple</span>
                   </div>
                   <h4 className="blog-title">
-                    <a href="blog_single.html">
+                    <Link to="/blog/006">
                       Des moyens efficaces pour surmonter les problèmes de mode
                       masculine
-                    </a>
+                    </Link>
                   </h4>
                   <p className="info">
                     <span>
-                      par <a href="#">l'Administrateur</a>
+                      par <span>l'Administrateur</span>
                     </span>
                     <span>23 février 2025</span>
                   </p>
@@ -290,22 +263,22 @@ const Section5 = () => {
             <div className="item">
               <div className="blog-item">
                 <div className="blog-item-image">
-                  <a href="blog_single.html" className="blog-img-link">
-                    <img src="img/blog_img/002.jpg" alt="blog image" />
-                  </a>
+                  <Link to="/blog/002" className="blog-img-link">
+                    <img src="img/blog_img/002.jpg" alt="blog image2" />
+                  </Link>
                 </div>
                 <div className="blog-item-content">
                   <div className="tag">
-                    <a href="#">River</a>
+                    <span>River</span>
                   </div>
                   <h4 className="blog-title">
-                    <a href="blog_single.html">
+                    <Link to="/blog/002">
                       Lancement de la collection Été Enfants 2025
-                    </a>
+                    </Link>
                   </h4>
                   <p className="info">
                     <span>
-                      par <a href="#">l'Administrateur</a>
+                      par <span>l'Administrateur</span>
                     </span>
                     <span>15 avril 2024</span>
                   </p>
@@ -316,20 +289,20 @@ const Section5 = () => {
             <div className="item">
               <div className="blog-item">
                 <div className="blog-item-image">
-                  <a href="blog_single.html" className="blog-img-link">
-                    <img src="img/blog_img/003.jpg" alt="blog image" />
-                  </a>
+                  <Link to="/blog/003" className="blog-img-link">
+                    <img src="img/blog_img/003.jpg" alt="blog image3" />
+                  </Link>
                 </div>
                 <div className="blog-item-content">
                   <div className="tag">
-                    <a href="#">Femme</a>
+                    <span>Femme</span>
                   </div>
                   <h4 className="blog-title">
-                    <a href="blog_single.html">Offre à durée limitée </a>
+                    <Link to="/blog/003">Offre à durée limitée </Link>
                   </h4>
                   <p className="info">
                     <span>
-                      par <a href="#">l'utilisateur</a>
+                      par <span>l'utilisateur</span>
                     </span>
                     <span>08 mars 2025</span>
                   </p>
@@ -340,24 +313,24 @@ const Section5 = () => {
             <div className="item">
               <div className="blog-item">
                 <div className="blog-item-image">
-                  <a href="blog_single.html" className="blog-img-link">
-                    <img src="img/blog_img/004.jpg" alt="blog image" />
-                  </a>
+                  <Link to="/blog/004" className="blog-img-link">
+                    <img src="img/blog_img/004.jpg" alt="blog image4" />
+                  </Link>
                 </div>
                 <div className="blog-item-content">
                   <div className="tag">
-                    <a href="#">Femme</a>
-                    <a href="#">Voiture</a>
+                    <span>Femme</span>
+                    <span>Voiture</span>
                   </div>
                   <h4 className="blog-title">
-                    <a href="blog_single.html">
+                    <Link to="/blog/004">
                       Des moyens efficaces pour surmonter les problèmes de mode
                       masculines
-                    </a>
+                    </Link>
                   </h4>
                   <p className="info">
                     <span>
-                      par <a href="#">l'Administrateur</a>
+                      par <span>l'Administrateur</span>
                     </span>
                     <span>31 janvier 2025</span>
                   </p>
@@ -368,23 +341,23 @@ const Section5 = () => {
             <div className="item">
               <div className="blog-item">
                 <div className="blog-item-image">
-                  <a href="blog_single.html" className="blog-img-link">
-                    <img src="img/blog_img/005.jpg" alt="blog image" />
-                  </a>
+                  <Link to="/blog/005" className="blog-img-link">
+                    <img src="img/blog_img/005.jpg" alt="blog image5" />
+                  </Link>
                 </div>
                 <div className="blog-item-content">
                   <div className="tag">
-                    <a href="#">Femme</a>
+                    <span>Femme</span>
                   </div>
                   <h4 className="blog-title">
-                    <a href="blog_single.html">
+                    <Link to="/blog/005">
                       Des moyens efficaces pour surmonter les problèmes de mode
                       masculine
-                    </a>
+                    </Link>
                   </h4>
                   <p className="info">
                     <span>
-                      par <a href="#"> l'Administrateur</a>
+                      par <span> l'Administrateur</span>
                     </span>
                     <span>04 janvier 2025</span>
                   </p>
@@ -411,49 +384,49 @@ const Section5 = () => {
             {/*Item*/}
             <div className="item">
               <div className="brand-item">
-                <a>
+                <span>
                   <img src="img/brand/001.png" alt="brand" />
-                </a>
+                </span>
               </div>
             </div>
             {/*Item*/}
             <div className="item">
               <div className="brand-item">
-                <a>
+                <span>
                   <img src="img/brand/002.png" alt="brand" />
-                </a>
+                </span>
               </div>
             </div>
             {/*Item*/}
             <div className="item">
               <div className="brand-item">
-                <a>
+                <span>
                   <img src="img/brand/003.png" alt="brand" />
-                </a>
+                </span>
               </div>
             </div>
             {/*Item*/}
             <div className="item">
               <div className="brand-item">
-                <a>
+                <span>
                   <img src="img/brand/004.png" alt="brand" />
-                </a>
+                </span>
               </div>
             </div>
             {/*Item*/}
             <div className="item">
               <div className="brand-item">
-                <a>
+                <span>
                   <img src="img/brand/005.png" alt="brand" />
-                </a>
+                </span>
               </div>
             </div>
             {/*Item*/}
             <div className="item">
               <div className="brand-item">
-                <a>
+                <span>
                   <img src="img/brand/006.png" alt="brand" />
-                </a>
+                </span>
               </div>
             </div>
           </OwlCarousel>

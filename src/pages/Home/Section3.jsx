@@ -22,7 +22,7 @@ const Section3 = () => {
           nav={false}
           autoplay={true}
           autoplayHoverPause={true}
-          autoplayTimeout={3000}
+          autoplayTimeout={20000}
           dots={false}
         >
           {/*Item*/}
@@ -32,7 +32,7 @@ const Section3 = () => {
               <div className="product-item-img">
                 {/*Image*/}
                 <Link className="product-item-img-link" to="/product_detail">
-                  <img src="img/products/02/01.jpg" alt="Product Item" />
+                  <img src="img/products/01/01.jpg" alt="Product Item" />
                 </Link>
                 {/*Add to Link*/}
                 <div className="add-to-link">
@@ -74,7 +74,7 @@ const Section3 = () => {
                   <Link to="/category/minimal">Minimal</Link>
                 </div>
                 <Link to="/product_detail" className="product-item-title">
-                  <span>Chemisiers à manches courtes</span>
+                  <span>Chemisiers légers </span>
                 </Link>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -109,7 +109,7 @@ const Section3 = () => {
               <div className="product-item-img">
                 {/*Image*/}
                 <Link className="product-item-img-link" to="/product_detail">
-                  <img src="img/products/12/01.jpg" alt="Product Item" />
+                  <img src="img/products/12/03.jpg" alt="Product Item" />
                 </Link>
                 {/*Add to Link*/}
                 <div className="add-to-link">
@@ -151,7 +151,7 @@ const Section3 = () => {
                   <Link to="/category/minimal">Minimal</Link>
                 </div>
                 <Link to="/product_detail" className="product-item-title">
-                  <span>Chemisiers à manches courtes</span>
+                  <span>tee-shirt manches courtes</span>
                 </Link>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -192,7 +192,7 @@ const Section3 = () => {
               <div className="product-item-img">
                 {/*Image*/}
                 <Link className="product-item-img-link" to="/product_detail">
-                  <img src="img/products/08/01.jpg" alt="Product Item" />
+                  <img src="img/products/08/02.jpg" alt="Product Item" />
                 </Link>
                 {/*Add to Link*/}
                 <div className="add-to-link">
@@ -234,7 +234,7 @@ const Section3 = () => {
                   <Link to="/category/minimal">Minimal</Link>
                 </div>
                 <Link to="/product_detail" className="product-item-title">
-                  <span>Chemisiers à manches courtes</span>
+                  <span>gilet homme</span>
                 </Link>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -278,7 +278,7 @@ const Section3 = () => {
               <div className="product-item-img">
                 {/*Image*/}
                 <Link className="product-item-img-link" to="/product_detail">
-                  <img src="img/products/04/01.jpg" alt="Product Item" />
+                  <img src="img/products/04/02.jpg" alt="Product Item" />
                 </Link>
                 {/*Add to Link*/}
                 <div className="add-to-link">
@@ -320,7 +320,7 @@ const Section3 = () => {
                   <Link to="/category/minimal">Minimal</Link>
                 </div>
                 <Link to="/product_detail" className="product-item-title">
-                  <span>Chemisiers à manches courtes</span>
+                  <span>robe femme</span>
                 </Link>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -355,7 +355,7 @@ const Section3 = () => {
               <div className="product-item-img">
                 {/*Image*/}
                 <Link className="product-item-img-link" to="/product_detail">
-                  <img src="img/products/05/01.jpg" alt="Product Item" />
+                  <img src="img/products/05/02.jpg" alt="Product Item" />
                 </Link>
                 {/*Add to Link*/}
                 <div className="add-to-link">
@@ -397,7 +397,7 @@ const Section3 = () => {
                   <Link to="/category/minimal">Minimal</Link>
                 </div>
                 <Link to="/product_detail" className="product-item-title">
-                  <span>Chemisiers à manches courtes</span>
+                  <span>costume femme</span>
                 </Link>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -432,7 +432,7 @@ const Section3 = () => {
               <div className="product-item-img">
                 {/*Image*/}
                 <Link className="product-item-img-link" to="/product_detail">
-                  <img src="img/products/06/01.jpg" alt="Product Item" />
+                  <img src="img/products/06/02.jpg" alt="Product Item" />
                 </Link>
                 {/*Add to Link*/}
                 <div className="add-to-link">
@@ -474,17 +474,17 @@ const Section3 = () => {
                   <Link to="/category/minimal">Minimal</Link>
                 </div>
                 <Link to="/product_detail" className="product-item-title">
-                  <span>Chemisiers à manches courtes</span>
+                  <span>ensemble femme</span>
                 </Link>
                 <p className="product-item-price">
                   <span className="product-price-amount">
                     <del>
                       <span className="product-price-currency-symbol">€</span>
-                      49.99
+                      79.99
                     </del>
                     <ins>
                       <span className="product-price-currency-symbol">€</span>
-                      29.99
+                      49.99
                     </ins>
                   </span>
                 </p>
@@ -515,7 +515,7 @@ const Section3 = () => {
               <div className="product-item-img">
                 {/*Image*/}
                 <Link className="product-item-img-link" to="/product_detail">
-                  <img src="img/products/07/01.jpg" alt="Product Item" />
+                  <img src="img/products/07/02.jpg" alt="Product Item" />
                 </Link>
                 {/*Add to Link*/}
                 <div className="add-to-link">
@@ -557,7 +557,7 @@ const Section3 = () => {
                   <Link to="/category/minimal">Minimal</Link>
                 </div>
                 <Link to="/product_detail" className="product-item-title">
-                  <span>Chemisiers à manches courtes</span>
+                  <span>jogging femme</span>
                 </Link>
                 <p className="product-item-price">
                   <span className="product-price-amount">
@@ -595,7 +595,7 @@ const Section3 = () => {
               <div className="product-item-img">
                 {/*Image*/}
                 <Link className="product-item-img-link" to="/product_detail">
-                  <img src="img/products/08/01.jpg" alt="Product Item" />
+                  <img src="img/products/08/03.png" alt="Product Item" />
                 </Link>
                 {/*Add to Link*/}
                 <div className="add-to-link">
@@ -637,20 +637,20 @@ const Section3 = () => {
                   <Link to="/category/minimal">Minimal</Link>
                 </div>
                 <Link to="/product_detail" className="product-item-title">
-                  <span>Chemisiers à manches courtes</span>
+                  <span>ensemble costume homme chic</span>
                 </Link>
                 <p className="product-item-price">
                   <span className="product-price-amount">
                     <span>
                       <span className="product-price-currency-symbol">€</span>
-                      49.99
+                      149.99
                     </span>
                   </span>
                   –
                   <span className="product-price-amount">
                     <span>
                       <span className="product-price-currency-symbol">€</span>
-                      74.99
+                      94.99
                     </span>
                   </span>
                 </p>

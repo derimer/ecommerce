@@ -15,7 +15,7 @@ const Home = () => {
         <div className="container-fluid">
           <p className="promotion-text">
             Livraison gratuite sur toutes les commandes de plus de 100 € !
-            <Link className="link" to="/home"> {/* Utilisation de Link à la place de a */}
+            <Link className="link" to="/product_listing">
               Explorer notre collection
             </Link>
           </p>

@@ -8,7 +8,7 @@ const Section1 = () => {
     <div className="container">
       <div className="row">
         <div className="col-12">
-          <h1 className="breadcrumb-title">Mode vetement homme</h1>
+          <h1 className="breadcrumb-title">Mode vetement homme/femme</h1>
           <nav className="breadcrumb-link">
             <span><a href="home.html">Accueil</a></span>
             <span><a href="home.html">Categories</a></span>

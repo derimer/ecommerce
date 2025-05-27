@@ -1,8 +1,8 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 const Section4 = () => {
   return (
-   
   <section className="sec-padding">
     <div className="container">
       <div className="page-head">
@@ -18,19 +18,19 @@ const Section4 = () => {
             {/*Product Img*/}
             <div className="product-item-img">
               {/*Image*/}
-              <a className="product-item-img-link">
+              <Link className="product-item-img-link" to="/product_detail/01">
                 <img src="img/products/01/01.jpg" alt="Product Item" />
-              </a>
+              </Link>
               {/*Add to Link*/}
               <div className="add-to-link">
-                <a className="btn btn--primary btn--sm">Ajoutez au panier</a>
+                <button className="btn btn--primary btn--sm">Ajoutez au panier</button>
               </div>
               {/*Hover Icons*/}
               <div className="hover-product-icon">
                 <div className="product-icon-btn-wrap">
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                  <button data-toggle="tooltip" data-placement="left" title="Quick View" className="icon-btn"><i className="ti-search" /></button>
+                  <button data-toggle="tooltip" data-placement="left" title="Add to Whishlist" className="icon-btn"><i className="ti-heart" /></button>
+                  <button data-toggle="tooltip" data-placement="left" title="Add to Compare" className="icon-btn"><i className="ti-reload" /></button>
                 </div>
               </div>
               {/*Labels*/}
@@ -40,8 +40,8 @@ const Section4 = () => {
             </div>
             {/*Product Content*/}
             <div className="product-item-content">
-              <div className="tag"><a href="#">Minimal</a></div>
-              <a href="product_detail.html" className="product-item-title"><span>Chemisiers à manches courtes</span></a>
+              <div className="tag"><span>Minimal</span></div>
+              <Link to="/product_detail/01" className="product-item-title"><span>Chemisiers légers</span></Link>
               <p className="product-item-price">
                 <span className="product-price-amount">
                   <span className="product-price-currency-symbol">€</span>49.99
@@ -51,10 +51,10 @@ const Section4 = () => {
                 <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                   <span style={{width: '60%'}} />
                 </div>
-                <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                <span className="product-rating-count"><span className="count">3</span> Reviews</span>
               </div>
               <p className="product-description">
-              Un imprimeur inconnu a rassemblé une épreuve de caractères pour en faire un recueil de spécimens typographiques. Ce recueil a non seulement survécu à cinq siècles, mais a également traversé le passage à l'électronique sans pour autant changer fondamentalement de forme.
+                Un imprimeur inconnu a rassemblé une épreuve de caractères pour en faire un recueil de spécimens typographiques. Ce recueil a non seulement survécu à cinq siècles, mais a également traversé le passage à l'électronique sans pour autant changer fondamentalement de forme.
               </p>
             </div>
           </div>
@@ -65,26 +65,26 @@ const Section4 = () => {
             {/*Product Img*/}
             <div className="product-item-img">
               {/*Image*/}
-              <a className="product-item-img-link">
-                <img src="img/products/03/01.jpg" alt="Product Item" />
-              </a>
+              <Link className="product-item-img-link" to="/product_detail/02">
+                <img src="img/products/03/02.jpg" alt="Product Item" />
+              </Link>
               {/*Add to Link*/}
               <div className="add-to-link">
-                <a className="btn btn--primary btn--sm">Selectionnez une Option</a>
+                <button className="btn btn--primary btn--sm">Selectionnez une Option</button>
               </div>
               {/*Hover Icons*/}
               <div className="hover-product-icon">
                 <div className="product-icon-btn-wrap">
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                  <button data-toggle="tooltip" data-placement="left" title="Quick View" className="icon-btn"><i className="ti-search" /></button>
+                  <button data-toggle="tooltip" data-placement="left" title="Add to Whishlist" className="icon-btn"><i className="ti-heart" /></button>
+                  <button data-toggle="tooltip" data-placement="left" title="Add to Compare" className="icon-btn"><i className="ti-reload" /></button>
                 </div>
               </div>
             </div>
             {/*Product Content*/}
             <div className="product-item-content">
-              <div className="tag"><a href="#">Minimal</a></div>
-              <a href="product_detail.html" className="product-item-title"><span>Chemisiers à manches courtes</span></a>
+              <div className="tag"><span>Minimal</span></div>
+              <Link to="/product_detail/02" className="product-item-title"><span>femme robe liberté</span></Link>
               <p className="product-item-price">
                 <span className="product-price-amount">
                   <del>
@@ -99,10 +99,10 @@ const Section4 = () => {
                 <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                   <span style={{width: '60%'}} />
                 </div>
-                <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                <span className="product-rating-count"><span className="count">3</span> Reviews</span>
               </div>
               <p className="product-description">
-              Un imprimeur inconnu a rassemblé une épreuve de caractères pour en faire un recueil de spécimens typographiques. Ce recueil a non seulement survécu à cinq siècles, mais a également traversé le passage à l'électronique sans pour autant changer fondamentalement de forme.
+                Un imprimeur inconnu a rassemblé une épreuve de caractères pour en faire un recueil de spécimens typographiques. Ce recueil a non seulement survécu à cinq siècles, mais a également traversé le passage à l'électronique sans pour autant changer fondamentalement de forme.
               </p>
             </div>
           </div>
@@ -113,19 +113,19 @@ const Section4 = () => {
             {/*Product Img*/}
             <div className="product-item-img">
               {/*Image*/}
-              <a className="product-item-img-link">
-                <img src="img/products/09/01.jpg" alt="Product Item" />
-              </a>
+              <Link className="product-item-img-link" to="/product_detail/03">
+                <img src="img/products/09/02.jpg" alt="Product Item" />
+              </Link>
               {/*Add to Link*/}
               <div className="add-to-link">
-                <a className="btn btn--primary btn--sm">Ajoutez au panier</a>
+                <button className="btn btn--primary btn--sm">Ajoutez au panier</button>
               </div>
               {/*Hover Icons*/}
               <div className="hover-product-icon">
                 <div className="product-icon-btn-wrap">
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                  <button data-toggle="tooltip" data-placement="left" title="Quick View" className="icon-btn"><i className="ti-search" /></button>
+                  <button data-toggle="tooltip" data-placement="left" title="Add to Whishlist" className="icon-btn"><i className="ti-heart" /></button>
+                  <button data-toggle="tooltip" data-placement="left" title="Add to Compare" className="icon-btn"><i className="ti-reload" /></button>
                 </div>
               </div>
               {/*Labels*/}
@@ -135,8 +135,8 @@ const Section4 = () => {
             </div>
             {/*Product Content*/}
             <div className="product-item-content">
-              <div className="tag"><a href="#">Minimal</a></div>
-              <a href="product_detail.html" className="product-item-title"><span>Chemisierss à manches courtes</span></a>
+              <div className="tag"><span>Minimal</span></div>
+              <Link to="/product_detail/03" className="product-item-title"><span>chemise sport homme</span></Link>
               <p className="product-item-price">
                 <span className="product-price-amount">
                   <span><span className="product-price-currency-symbol">€</span>49.99</span>
@@ -150,7 +150,7 @@ const Section4 = () => {
                 <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                   <span style={{width: '60%'}} />
                 </div>
-                <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                <span className="product-rating-count"><span className="count">3</span> Reviews</span>
               </div>
               <p className="product-description">
                 Un imprimeur inconnu a rassemblé une épreuve de caractères pour en faire un recueil de spécimens typographiques. Ce recueil a non seulement survécu à cinq siècles, mais a également traversé le passage à l'électronique sans pour autant changer fondamentalement de forme.
@@ -164,26 +164,26 @@ const Section4 = () => {
             {/*Product Img*/}
             <div className="product-item-img">
               {/*Image*/}
-              <a className="product-item-img-link">
-                <img src="img/products/10/01.jpg" alt="Product Item" />
-              </a>
+              <Link className="product-item-img-link" to="/product_detail/04">
+                <img src="img/products/10/02.jpg" alt="Product Item" />
+              </Link>
               {/*Add to Link*/}
               <div className="add-to-link">
-                <a className="btn btn--primary btn--sm">Ajoutez au panier</a>
+                <button className="btn btn--primary btn--sm">Ajoutez au panier</button>
               </div>
               {/*Hover Icons*/}
               <div className="hover-product-icon">
                 <div className="product-icon-btn-wrap">
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                  <button data-toggle="tooltip" data-placement="left" title="Quick View" className="icon-btn"><i className="ti-search" /></button>
+                  <button data-toggle="tooltip" data-placement="left" title="Add to Whishlist" className="icon-btn"><i className="ti-heart" /></button>
+                  <button data-toggle="tooltip" data-placement="left" title="Add to Compare" className="icon-btn"><i className="ti-reload" /></button>
                 </div>
               </div>
             </div>
             {/*Product Content*/}
             <div className="product-item-content">
-              <div className="tag"><a href="#">Minimal</a></div>
-              <a href="product_detail.html" className="product-item-title"><span>Chemisiers à manches courtes</span></a>
+              <div className="tag"><span>Minimal</span></div>
+              <Link to="/product_detail/04" className="product-item-title"><span>Chemisiers à manches longues homme sport</span></Link>
               <p className="product-item-price">
                 <span className="product-price-amount">
                   <span className="product-price-currency-symbol">€</span>49.99
@@ -193,7 +193,7 @@ const Section4 = () => {
                 <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                   <span style={{width: '60%'}} />
                 </div>
-                <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                <span className="product-rating-count"><span className="count">3</span> Reviews</span>
               </div>
               <p className="product-description">
                 Un imprimeur inconnu a rassemblé une épreuve de caractères pour en faire un recueil de spécimens typographiques. Ce recueil a non seulement survécu à cinq siècles, mais a également traversé le passage à l'électronique sans pour autant changer fondamentalement de forme.
@@ -207,26 +207,26 @@ const Section4 = () => {
             {/*Product Img*/}
             <div className="product-item-img">
               {/*Image*/}
-              <a className="product-item-img-link">
-                <img src="img/products/04/01.jpg" alt="Product Item" />
-              </a>
+              <Link className="product-item-img-link" to="/product_detail/05">
+                <img src="img/products/04/02.jpg" alt="Product Item" />
+              </Link>
               {/*Add to Link*/}
               <div className="add-to-link">
-                <a className="btn btn--primary btn--sm">Ajoutez au panier</a>
+                <button className="btn btn--primary btn--sm">Ajoutez au panier</button>
               </div>
               {/*Hover Icons*/}
               <div className="hover-product-icon">
                 <div className="product-icon-btn-wrap">
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                  <button data-toggle="tooltip" data-placement="left" title="Quick View" className="icon-btn"><i className="ti-search" /></button>
+                  <button data-toggle="tooltip" data-placement="left" title="Add to Whishlist" className="icon-btn"><i className="ti-heart" /></button>
+                  <button data-toggle="tooltip" data-placement="left" title="Add to Compare" className="icon-btn"><i className="ti-reload" /></button>
                 </div>
               </div>
             </div>
             {/*Product Content*/}
             <div className="product-item-content">
-              <div className="tag"><a href="#">Minimal</a></div>
-              <a href="product_detail.html" className="product-item-title"><span>Chemisiers à manches courtes</span></a>
+              <div className="tag"><span>Minimal</span></div>
+              <Link to="/product_detail/05" className="product-item-title"><span>robe femme</span></Link>
               <p className="product-item-price">
                 <span className="product-price-amount">
                   <span className="product-price-currency-symbol">€</span>49.99
@@ -236,7 +236,7 @@ const Section4 = () => {
                 <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                   <span style={{width: '60%'}} />
                 </div>
-                <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                <span className="product-rating-count"><span className="count">3</span> Reviews</span>
               </div>
               <p className="product-description">
                 Un imprimeur inconnu a rassemblé une épreuve de caractères pour en faire un recueil de spécimens typographiques. Ce recueil a non seulement survécu à cinq siècles, mais a également traversé le passage à l'électronique sans pour autant changer fondamentalement de forme.
@@ -250,19 +250,19 @@ const Section4 = () => {
             {/*Product Img*/}
             <div className="product-item-img">
               {/*Image*/}
-              <a className="product-item-img-link">
-                <img src="img/products/12/01.jpg" alt="Product Item" />
-              </a>
+              <Link className="product-item-img-link" to="/product_detail/06">
+                <img src="img/products/12/02.jpg" alt="Product Item" />
+              </Link>
               {/*Add to Link*/}
               <div className="add-to-link">
-                <a className="btn btn--primary btn--sm">Ajoutez au panier</a>
+                <button className="btn btn--primary btn--sm">Ajoutez au panier</button>
               </div>
               {/*Hover Icons*/}
               <div className="hover-product-icon">
                 <div className="product-icon-btn-wrap">
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                  <button data-toggle="tooltip" data-placement="left" title="Quick View" className="icon-btn"><i className="ti-search" /></button>
+                  <button data-toggle="tooltip" data-placement="left" title="Add to Whishlist" className="icon-btn"><i className="ti-heart" /></button>
+                  <button data-toggle="tooltip" data-placement="left" title="Add to Compare" className="icon-btn"><i className="ti-reload" /></button>
                 </div>
               </div>
               {/*Labels*/}
@@ -272,8 +272,8 @@ const Section4 = () => {
             </div>
             {/*Product Content*/}
             <div className="product-item-content">
-              <div className="tag"><a href="#">Minimal</a></div>
-              <a href="product_detail.html" className="product-item-title"><span>Chemisiers à manches courtes</span></a>
+              <div className="tag"><span>Minimal</span></div>
+              <Link to="/product_detail/06" className="product-item-title"><span>tee-shirt homme</span></Link>
               <p className="product-item-price">
                 <span className="product-price-amount">
                   <del>
@@ -288,7 +288,7 @@ const Section4 = () => {
                 <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                   <span style={{width: '60%'}} />
                 </div>
-                <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                <span className="product-rating-count"><span className="count">3</span> Reviews</span>
               </div>
               <p className="product-description">
                 Un imprimeur inconnu a rassemblé une épreuve de caractères pour en faire un recueil de spécimens typographiques. Ce recueil a non seulement survécu à cinq siècles, mais a également traversé le passage à l'électronique sans pour autant changer fondamentalement de forme.
@@ -302,26 +302,26 @@ const Section4 = () => {
             {/*Product Img*/}
             <div className="product-item-img">
               {/*Image*/}
-              <a className="product-item-img-link">
-                <img src="img/products/06/01.jpg" alt="Product Item" />
-              </a>
+              <Link className="product-item-img-link" to="/product_detail/07">
+                <img src="img/products/06/02.jpg" alt="Product Item" />
+              </Link>
               {/*Add to Link*/}
               <div className="add-to-link">
-                <a className="btn btn--primary btn--sm">Ajoutez au panier</a>
+                <button className="btn btn--primary btn--sm">Ajoutez au panier</button>
               </div>
               {/*Hover Icons*/}
               <div className="hover-product-icon">
                 <div className="product-icon-btn-wrap">
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                  <button data-toggle="tooltip" data-placement="left" title="Quick View" className="icon-btn"><i className="ti-search" /></button>
+                  <button data-toggle="tooltip" data-placement="left" title="Add to Whishlist" className="icon-btn"><i className="ti-heart" /></button>
+                  <button data-toggle="tooltip" data-placement="left" title="Add to Compare" className="icon-btn"><i className="ti-reload" /></button>
                 </div>
               </div>
             </div>
             {/*Product Content*/}
             <div className="product-item-content">
-              <div className="tag"><a href="#">Minimal</a></div>
-              <a href="product_detail.html" className="product-item-title"><span>Chemisiers à manches courtes</span></a>
+              <div className="tag"><span>Minimal</span></div>
+              <Link to="/product_detail/07" className="product-item-title"><span>ensemble femme</span></Link>
               <p className="product-item-price">
                 <span className="product-price-amount">
                   <span className="product-price-currency-symbol">€</span>49.99
@@ -331,7 +331,7 @@ const Section4 = () => {
                 <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                   <span style={{width: '60%'}} />
                 </div>
-                <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                <span className="product-rating-count"><span className="count">3</span> Reviews</span>
               </div>
               <p className="product-description">
                 Un imprimeur inconnu a rassemblé une épreuve de caractères pour en faire un recueil de spécimens typographiques. Ce recueil a non seulement survécu à cinq siècles, mais a également traversé le passage à l'électronique sans pour autant changer fondamentalement de forme.
@@ -345,19 +345,19 @@ const Section4 = () => {
             {/*Product Img*/}
             <div className="product-item-img">
               {/*Image*/}
-              <a className="product-item-img-link">
+              <Link className="product-item-img-link" to="/product_detail/08">
                 <img src="img/products/14/01.jpg" alt="Product Item" />
-              </a>
+              </Link>
               {/*Add to Link*/}
               <div className="add-to-link">
-                <a className="btn btn--primary btn--sm">Selectionnez une Option</a>
+                <button className="btn btn--primary btn--sm">Selectionnez une Option</button>
               </div>
               {/*Hover Icons*/}
               <div className="hover-product-icon">
                 <div className="product-icon-btn-wrap">
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Quick View"><i className="ti-search" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Whishlist"><i className="ti-heart" /></a>
-                  <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Compare"><i className="ti-reload" /></a>
+                  <button data-toggle="tooltip" data-placement="left" title="Quick View" className="icon-btn"><i className="ti-search" /></button>
+                  <button data-toggle="tooltip" data-placement="left" title="Add to Whishlist" className="icon-btn"><i className="ti-heart" /></button>
+                  <button data-toggle="tooltip" data-placement="left" title="Add to Compare" className="icon-btn"><i className="ti-reload" /></button>
                 </div>
               </div>
               {/*Labels*/}
@@ -368,8 +368,8 @@ const Section4 = () => {
             </div>
             {/*Product Content*/}
             <div className="product-item-content">
-              <div className="tag"><a href="#">Minimal</a></div>
-              <a href="product_detail.html" className="product-item-title"><span>Chemisiers à manches courtes</span></a>
+              <div className="tag"><span>Minimal</span></div>
+              <Link to="/product_detail/08" className="product-item-title"><span>Chemisiers à manches courtes</span></Link>
               <p className="product-item-price">
                 <span className="product-price-amount">
                   <span><span className="product-price-currency-symbol">€</span>49.99</span>
@@ -383,7 +383,7 @@ const Section4 = () => {
                 <div className="star-rating" itemProp="reviewRating" itemScope itemType="http://schema.org/Rating" title="Rated 4 out of 5">
                   <span style={{width: '60%'}} />
                 </div>
-                <a href="#" className="product-rating-count"><span className="count">3</span> Reviews</a>
+                <span className="product-rating-count"><span className="count">3</span> Reviews</span>
               </div>
               <p className="product-description">
                 Un imprimeur inconnu a rassemblé une épreuve de caractères pour en faire un recueil de spécimens typographiques. Ce recueil a non seulement survécu à cinq siècles, mais a également traversé le passage à l'électronique sans pour autant changer fondamentalement de forme.
@@ -394,12 +394,10 @@ const Section4 = () => {
       </div>
     </div>
     <div className="container text-center">
-      <a href="#" className="btn btn--primary">en voir +</a>
+      <Link to="/product_listing" className="btn btn--primary">en voir +</Link>
     </div>
   </section>
   )
 }
-
-
 
 export default Section4
