@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -103,7 +103,7 @@ const Section1 = () => {
                   </h1>
                   <a href="#" className="btn btn--primary space--1">
                     Voir les offres
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -130,7 +130,7 @@ const Section1 = () => {
                   
                   <a href="#" className="btn btn--white space--1">
                     voir les offres 
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
