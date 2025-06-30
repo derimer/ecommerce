@@ -23,7 +23,7 @@ const Blogsingle = () => {
                   <h1 className="breadcrumb-title">Blog</h1>
                   <nav className="breadcrumb-link">
                     <span>
-                      <a href="home.html">Axcueil</a>
+                      <a href="home.html">Accueil</a>
                     </span>
                     <span>Blog</span>
                   </nav>
@@ -46,14 +46,14 @@ const Blogsingle = () => {
                   {/*Blog Item*/}
                   <div className="blog-item">
                     <div className="blog-item-image">
-                      <a className="blog-img-link">
-                        <img src="img/blog_img/001.jpg" alt="blog image" />
-                      </a>
+                      <span className="blog-img-link">
+                        <img src="img/blog_img/001.jpg" alt="blog" />
+                      </span>
                     </div>
                     <div className="blog-item-content">
                       <p className="info">
                         <span>
-                          by <a href="#">Admin</a>
+                          by <span style={{fontWeight: 500}}>Admin</span>
                         </span>
                         <span>23 June 2018</span>
                       </p>
@@ -62,7 +62,7 @@ const Blogsingle = () => {
                       </h2>
                       <div className="blog-description-content">
                         <p>
-                        Il est établi depuis longtemps qu'un lecteur sera distrait par le contenu lisible d'une page lorsqu'il examinera sa mise en page. L'intérêt du Lorem Ipsum réside dans sa distribution plus ou moins normale des lettres, contrairement à l'utilisation de « Contenu ici, contenu ici », ce qui donne un rendu lisible en anglais. De nombreux logiciels de PAO et éditeurs de pages web utilisent désormais le Lorem Ipsum comme modèle de texte par défaut, et une recherche sur « lorem ipsum » permet de découvrir de nombreux sites web encore balbutiants. Différentes versions ont évolué au fil des ans, parfois par accident, parfois volontairement (avec une touche d'humour, etc.).
+                          Il est établi depuis longtemps qu'un lecteur sera distrait par le contenu lisible d'une page lorsqu'il examinera sa mise en page. L'intérêt du Lorem Ipsum réside dans sa distribution plus ou moins normale des lettres, contrairement à l'utilisation de « Contenu ici, contenu ici », ce qui donne un rendu lisible en anglais. De nombreux logiciels de PAO et éditeurs de pages web utilisent désormais le Lorem Ipsum comme modèle de texte par défaut, et une recherche sur « lorem ipsum » permet de découvrir de nombreux sites web encore balbutiants. Différentes versions ont évolué au fil des ans, parfois par accident, parfois volontairement (avec une touche d'humour, etc.).
                         </p>
                         <p>
                           Lorem Ipsum is simply dummy text of the printing and
@@ -83,7 +83,7 @@ const Blogsingle = () => {
                           </cite>
                         </blockquote>
                         <p>
-                        Il est établi depuis longtemps qu'un lecteur sera distrait par le contenu lisible d'une page lorsqu'il examinera sa mise en page. L'intérêt du Lorem Ipsum réside dans sa distribution plus ou moins normale des lettres, contrairement à l'utilisation de « Contenu ici, contenu ici », ce qui donne un rendu lisible en anglais. De nombreux logiciels de PAO et éditeurs de pages web utilisent désormais le Lorem Ipsum comme modèle de texte par défaut, et une recherche sur « lorem ipsum » permet de découvrir de nombreux sites web encore balbutiants. Différentes versions ont évolué au fil des ans.
+                          Il est établi depuis longtemps qu'un lecteur sera distrait par le contenu lisible d'une page lorsqu'il examinera sa mise en page. L'intérêt du Lorem Ipsum réside dans sa distribution plus ou moins normale des lettres, contrairement à l'utilisation de « Contenu ici, contenu ici », ce qui donne un rendu lisible en anglais. De nombreux logiciels de PAO et éditeurs de pages web utilisent désormais le Lorem Ipsum comme modèle de texte par défaut, et une recherche sur « lorem ipsum » permet de découvrir de nombreux sites web encore balbutiants. Différentes versions ont évolué au fil des ans.
                         </p>
                         <br />
                         <h3>Fashion Photography Gallary</h3>
@@ -92,13 +92,13 @@ const Blogsingle = () => {
                             className="col post-content-gallary mfp-gallery-popup-link"
                             data-mfp-src="img/blog_img/003.jpg"
                           >
-                            <img src="img/blog_img/003.jpg" alt />
+                            <img src="img/blog_img/003.jpg" alt="gallery1" />
                           </figure>
                           <figure
                             className="col post-content-gallary mfp-gallery-popup-link"
                             data-mfp-src="img/blog_img/005.jpg"
                           >
-                            <img src="img/blog_img/005.jpg" alt />
+                            <img src="img/blog_img/005.jpg" alt="gallery2" />
                           </figure>
                         </div>
                       </div>
@@ -110,8 +110,10 @@ const Blogsingle = () => {
                               Categories:{" "}
                             </span>
                             <span>
-                              <a href="#">Fashion</a>,<a href="#">Lifestyle</a>,
-                              <a href="#">Store</a>,<a href="#">Trends</a>
+                              <button type="button" className="btn-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>Fashion</button>,{" "}
+                              <button type="button" className="btn-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>Lifestyle</button>,{" "}
+                              <button type="button" className="btn-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>Store</button>,{" "}
+                              <button type="button" className="btn-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>Trends</button>
                             </span>
                           </p>
                         </div>
@@ -119,7 +121,7 @@ const Blogsingle = () => {
                     </div>
                   </div>
                   {/*End Blog Item*/}
-                  {/*Commenr Area*/}
+                  {/*Comment Area*/}
                   <div className="comments-area clearfix">
                     {/*Comments*/}
                     <div className="comments">
@@ -136,7 +138,7 @@ const Blogsingle = () => {
                             <p className="meta">
                               <strong>James Koster</strong>
                               <span>–</span>
-                              <time dateTime>August 21, 2018</time>
+                              <time dateTime="2018-08-21">August 21, 2018</time>
                             </p>
                             <div className="description">
                               <p>
@@ -145,10 +147,10 @@ const Blogsingle = () => {
                                 It has survived not only five centuries
                               </p>
                             </div>
-                            <a href="#" className="comment-reply-link">
+                            <button type="button" className="comment-reply-link btn-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>
                               <i className="fa fa-reply left" />
                               Reply
-                            </a>
+                            </button>
                           </div>
                         </li>
                         {/*Item*/}
@@ -162,15 +164,15 @@ const Blogsingle = () => {
                             <p className="meta">
                               <strong>Michel</strong>
                               <span>–</span>
-                              <time dateTime>21 Aout 2024</time>
+                              <time dateTime="2024-08-21">21 Aout 2024</time>
                             </p>
                             <div className="description">
                               <p>Wow Special!</p>
                             </div>
-                            <a href="#" className="comment-reply-link">
+                            <button type="button" className="comment-reply-link btn-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>
                               <i className="fa fa-reply left" />
                               Reply
-                            </a>
+                            </button>
                           </div>
                         </li>
                       </ul>
@@ -181,13 +183,13 @@ const Blogsingle = () => {
                       <form id="comment-form" className="row comment-form">
                         <div className="col-sm-4 form-field-wrapper">
                           <label htmlFor="author">
-                           Nom<span className="required">*</span>
+                            Nom<span className="required">*</span>
                           </label>
                           <input
                             id="author"
                             name="author"
                             className="form-full input--lg"
-                            defaultValue
+                            defaultValue=""
                             size={30}
                             aria-required="true"
                             required
@@ -202,7 +204,7 @@ const Blogsingle = () => {
                             id="email"
                             name="email"
                             className="form-full input--lg"
-                            defaultValue
+                            defaultValue=""
                             size={30}
                             aria-required="true"
                             required
@@ -215,7 +217,7 @@ const Blogsingle = () => {
                             id="url"
                             name="url"
                             className="form-full input--lg"
-                            defaultValue
+                            defaultValue=""
                             size={30}
                             maxLength={200}
                             type="url"
@@ -235,18 +237,19 @@ const Blogsingle = () => {
                           />
                         </div>
                         <div className="col-12 form-field-wrapper">
-                          <input
+                          <button
                             name="submit"
                             id="submit"
                             className="btn btn--primary btn--lg"
-                            defaultValue="Post Comment"
                             type="submit"
-                          />
+                          >
+                            Post Comment
+                          </button>
                         </div>
                       </form>
                     </div>
                   </div>
-                  {/*End Commenr Area*/}
+                  {/*End Comment Area*/}
                 </div>
                 {/*Right Col*/}
                 <div className="col-md-4 col-lg-3">
@@ -258,7 +261,7 @@ const Blogsingle = () => {
                           <input
                             className="search-field input--lg"
                             placeholder="Search.."
-                            defaultValue
+                            defaultValue=""
                             name="s"
                             type="search"
                           />
@@ -277,27 +280,27 @@ const Blogsingle = () => {
                       <div className="widget-content">
                         <ul>
                           <li>
-                            <a href="#">Beauty</a>
+                            <button type="button" className="btn-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>Beauty</button>
                             <span className="count">(4)</span>
                           </li>
                           <li>
-                            <a href="#">Fashion</a>
+                            <button type="button" className="btn-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>Fashion</button>
                             <span className="count">(3)</span>
                           </li>
                           <li>
-                            <a href="#">Life Style</a>
+                            <button type="button" className="btn-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>Life Style</button>
                             <span className="count">(2)</span>
                           </li>
                           <li>
-                            <a href="#">Photography</a>
+                            <button type="button" className="btn-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>Photography</button>
                             <span className="count">(1)</span>
                           </li>
                           <li>
-                            <a href="#">Technology</a>
+                            <button type="button" className="btn-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>Technology</button>
                             <span className="count">(1)</span>
                           </li>
                           <li>
-                            <a href="#">Travel</a>
+                            <button type="button" className="btn-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>Travel</button>
                             <span className="count">(1)</span>
                           </li>
                         </ul>
@@ -309,24 +312,22 @@ const Blogsingle = () => {
                       <div className="widget-content">
                         <ul>
                           <li>
-                            <a href="#">juillet 2024</a>
-                          </li>
-                          <a href="#"></a>
-                          <li>
-                            <a href="#" />
-                            <a href="#">mars 2025</a>
+                            <button type="button" className="btn-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>juillet 2024</button>
                           </li>
                           <li>
-                            <a href="#">fevrier 2025</a>
+                            <button type="button" className="btn-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>mars 2025</button>
                           </li>
                           <li>
-                            <a href="#">janvier 2025</a>
+                            <button type="button" className="btn-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>fevrier 2025</button>
                           </li>
                           <li>
-                            <a href="#">decembre 2024</a>
+                            <button type="button" className="btn-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>janvier 2025</button>
                           </li>
                           <li>
-                            <a href="#">Fashion</a>
+                            <button type="button" className="btn-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>decembre 2024</button>
+                          </li>
+                          <li>
+                            <button type="button" className="btn-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>Fashion</button>
                           </li>
                         </ul>
                       </div>
@@ -338,13 +339,13 @@ const Blogsingle = () => {
                         <ul>
                           {/*Post*/}
                           <li>
-                            <a href="#" className="widget-post-thumb">
+                            <span className="widget-post-thumb">
                               <img src="img/blog_img/001.jpg" alt="post" />
-                            </a>
+                            </span>
                             <h6>
-                              <a href="#">
-                               Le jeudi, le meilleur jour de la semaine 
-                              </a>
+                              <button type="button" className="btn-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>
+                                Le jeudi, le meilleur jour de la semaine
+                              </button>
                             </h6>
                             <time
                               className="entry-date"
@@ -355,11 +356,13 @@ const Blogsingle = () => {
                           </li>
                           {/*Post*/}
                           <li>
-                            <a href="#" className="widget-post-thumb">
+                            <span className="widget-post-thumb">
                               <img src="img/blog_img/003.jpg" alt="post" />
-                            </a>
+                            </span>
                             <h6>
-                              <a href="#">How To Wear Dresses Over Pants</a>
+                              <button type="button" className="btn-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>
+                                How To Wear Dresses Over Pants
+                              </button>
                             </h6>
                             <time
                               className="entry-date"
@@ -370,13 +373,13 @@ const Blogsingle = () => {
                           </li>
                           {/*Post*/}
                           <li>
-                            <a href="#" className="widget-post-thumb">
+                            <span className="widget-post-thumb">
                               <img src="img/blog_img/004.jpg" alt="post" />
-                            </a>
+                            </span>
                             <h6>
-                              <a href="#">
+                              <button type="button" className="btn-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>
                                 etre pret quand arrivera le printemps
-                              </a>
+                              </button>
                             </h6>
                             <time
                               className="entry-date"
@@ -392,41 +395,25 @@ const Blogsingle = () => {
                     <div className="widget">
                       <h4 className="widget-title">Browse Tags</h4>
                       <div className="widget-content tagcloud">
-                        <a href="#" className="tag-cloud-link">
-                          Cafe
-                        </a>
-                        <a href="#" className="tag-cloud-link">
-                          Robes
-                        </a>
-                        <a href="#" className="tag-cloud-link">
-                          Fashion
-                        </a>
-                        <a href="#" className="tag-cloud-link">
-                          Lifestyle
-                        </a>
-                        <a href="#" className="tag-cloud-link">
-                         Homme
-                        </a>
-                        <a href="#" className="tag-cloud-link">
-                          Store
-                        </a>
-                        <a href="#" className="tag-cloud-link">
-                          Trends
-                        </a>
-                        <a href="#" className="tag-cloud-link">
-                          Femme
-                        </a>
+                        <button type="button" className="tag-cloud-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>Cafe</button>
+                        <button type="button" className="tag-cloud-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>Robes</button>
+                        <button type="button" className="tag-cloud-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>Fashion</button>
+                        <button type="button" className="tag-cloud-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>Lifestyle</button>
+                        <button type="button" className="tag-cloud-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>Homme</button>
+                        <button type="button" className="tag-cloud-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>Store</button>
+                        <button type="button" className="tag-cloud-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>Trends</button>
+                        <button type="button" className="tag-cloud-link" style={{background: "none", border: "none", padding: 0, color: "inherit", cursor: "pointer"}}>Femme</button>
                       </div>
                     </div>
                     {/*Widget*/}
                     <div className="widget">
                       <div className="widget-content widget_media_image">
-                        <a href="#" className="banner-item">
+                        <span className="banner-item">
                           <img
                             src="img/banner/widget_banner01.jpg"
                             alt="banner"
                           />
-                        </a>
+                        </span>
                       </div>
                     </div>
                   </aside>
@@ -437,7 +424,6 @@ const Blogsingle = () => {
         </section>
         {/*End Content*/}
       </div>
-
       <Footer />
     </>
   );
