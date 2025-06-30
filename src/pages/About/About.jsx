@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import OwlCarousel from "react-owl-carousel";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+import Header from "../../Components/Header";
+import Footer from "../../Components/Footer";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
