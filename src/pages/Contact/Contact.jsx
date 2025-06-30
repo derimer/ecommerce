@@ -82,20 +82,26 @@ const Contact = () => {
             <hr />
             <div className="form-field-wrapper">
               <label>Suivez-nous</label>
-              <ul className="social large">
-                <li>
-                  <a href="#"><i className="fa fa-twitter" /></a>
-                </li>
-                <li>
-                  <a href="#"><i className="fa fa-facebook" /></a>
-                </li>
-                <li>
-                  <a href="#"><i className="fa fa-google" /></a>
-                </li>
-                <li>
-                  <a href="#"><i className="fa fa-linkedin-square" /></a>
-                </li>
-              </ul>
+             <ul className="social large">
+              <li>
+    <a href="https://github.com/derimer" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <i className="fa fa-github" />
+    </a>
+              </li>
+ 
+  <li>
+    <a href="https://www.facebook.com/jeanrene.derimer.5/?locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+      <i className="fa fa-facebook" />
+    </a>
+  </li>
+ 
+  <li>
+    <a href="https://www.linkedin.com/in/jean-rene-derimer-4641b2268/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <i className="fa fa-linkedin-square" />
+    </a>
+  </li>
+</ul>
+
             </div>
           </div>
         </div>
