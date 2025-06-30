@@ -27,7 +27,7 @@ const Error = () => {
                                   </button>
                               </form>
                           </div>*/}
-                  <a href="#" className="btn btn--gray space-t--2">
+                  <a href="/" className="btn btn--gray space-t--2">
                     Back to Home
                   </a>
                 </div>

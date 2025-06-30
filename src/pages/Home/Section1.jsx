@@ -4,12 +4,11 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
-
 const Section1 = () => {
   return (
     <section id="intro" className="intro">
       {/*Slider Hero*/}
-    <OwlCarousel
+      <OwlCarousel
         className="owl-theme"
         items={1}
         loop
@@ -18,7 +17,7 @@ const Section1 = () => {
         autoplayHoverPause={true}
         dots={true}
         nav={true}
-    >
+      >
         {/*Item*/}
         <div
           className="item height-9 sm-height-600px"
@@ -42,9 +41,9 @@ const Section1 = () => {
                     <br />
                     fait pour elle
                   </h1>
-                  <a href="#" className="btn btn--primary space--1">
-                  Voir les offres
-                  </a>
+                  <button type="button" className="btn btn--primary space--1" onClick={() => { /* action ou navigation */ }}>
+                    Voir les offres
+                  </button>
                 </div>
               </div>
             </div>
@@ -73,9 +72,9 @@ const Section1 = () => {
                     <br />
                     &amp; Collection
                   </h1>
-                  <a href="#" className="btn btn--primary space--1">
-                   Voir les offres
-                  </a>
+                  <button type="button" className="btn btn--primary space--1" onClick={() => { /* action ou navigation */ }}>
+                    Voir les offres
+                  </button>
                 </div>
               </div>
             </div>
@@ -101,9 +100,9 @@ const Section1 = () => {
                     <br />
                     Automne
                   </h1>
-                  <a href="#" className="btn btn--primary space--1">
+                  <button type="button" className="btn btn--primary space--1" onClick={() => { /* action ou navigation */ }}>
                     Voir les offres
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -127,10 +126,9 @@ const Section1 = () => {
               <div className="col-lg-6 col-md-8 mx-md-auto">
                 <div className="intro-caption intro-caption-middel text-center intro-caption-fade sec-padding--lg">
                   <p className="intro-subtitle">SITE TYPE DEVELOPPE PAR JRD <br/>LES VENTES STARS DE L'ETE</p>
-                  
-                  <a href="#" className="btn btn--white space--1">
+                  <button type="button" className="btn btn--white space--1" onClick={() => { /* action ou navigation */ }}>
                     voir les offres 
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -138,7 +136,6 @@ const Section1 = () => {
         </div>
       </OwlCarousel>
       {/*End Slider Hero*/}
-     
     </section>
   );
 };
