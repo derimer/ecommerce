@@ -7,14 +7,14 @@ const Section1 = () => {
   <div className="breadcrumb-content">
     <div className="container">
       <div className="row">
-        <div className="col-12">
-          <h1 className="breadcrumb-title">Mode vetement homme/femme</h1>
-          <nav className="breadcrumb-link">
-            <span><a href="home.html">Accueil</a></span>
-            <span><a href="home.html">Categories</a></span>
-            <span>Retours stocks</span>
-          </nav>
-        </div>
+<div className="col-12">
+  <h1 className="breadcrumb-title">Mode vetement homme femme</h1>
+  <nav className="breadcrumb-link">
+    <span><a href="home.html">Accueil</a></span>
+    <span><a href="home.html">Categories</a></span>
+    <span>Retours stocks</span>
+  </nav>
+</div>
       </div>
     </div>
   </div>

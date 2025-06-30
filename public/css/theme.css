@@ -1299,7 +1299,14 @@ ul:last-child {
     top: 0;
     left: 0;
     background-size: cover !important;
+<<<<<<< HEAD
     background-position:top center !important; 
+=======
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    width: 100%;
+    
+>>>>>>> 58846af2 (WIP: changements en cours)
     z-index: -1;
     background-color: #333;
     
