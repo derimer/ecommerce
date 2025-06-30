@@ -4,10 +4,20 @@ import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 
 const Cart = () => {
+  const handleRemoveProduct = () => {
+    // Ici tu mets le code pour supprimer le produit de ton panier
+    console.log("Produit supprimé !");
+  };
+
+  const handleUpdateShipping = () => {
+    // Code pour mettre à jour la livraison
+    console.log("Mise à jour de la livraison");
+  };
+
   return (
     <>
       <Header />
-      <div className="page-contaiter">
+      <div className="page-container"> {/* Corrigé si c'était une faute */}
         {/*Breadcrumb*/}
         <section className="breadcrumb">
           <div
@@ -56,15 +66,18 @@ const Cart = () => {
                         <tbody>
                           <tr>
                             <td className="product-remove">
-                              <a href="javascript:void(0)">
-                                <i
-                                  className="fa fa-times-circle"
-                                  aria-hidden="true"
-                                />
-                              </a>
+                              <button
+                                type="button"
+                                onClick={handleRemoveProduct}
+                                aria-label="Supprimer le produit"
+                                className="btn-link"
+                              >
+                                <i className="fa fa-times-circle" aria-hidden="true" />
+                              </button>
                             </td>
+
                             <td className="product-thumbnail">
-                              <Link to="/product_detail"> {/* Lien vers les détails du produit */}
+                              <Link to="/product_detail">
                                 <img src="img/products/01/01.jpg" alt="Produit" />
                               </Link>
                             </td>
@@ -78,10 +91,7 @@ const Cart = () => {
                             </td>
                             <td>
                               <div className="product-quantity">
-                                <span
-                                  data-value="+"
-                                  className="quantity-btn quantityMinus"
-                                >
+                                <span data-value="+" className="quantity-btn quantityMinus">
                                   <i className="ti-minus" />
                                 </span>
                                 <input
@@ -94,10 +104,7 @@ const Cart = () => {
                                   title="Quantity"
                                   type="number"
                                 />
-                                <span
-                                  data-value="-"
-                                  className="quantity-btn quantityPlus"
-                                >
+                                <span data-value="-" className="quantity-btn quantityPlus">
                                   <i className="ti-plus" />
                                 </span>
                               </div>
@@ -110,15 +117,17 @@ const Cart = () => {
                           </tr>
                           <tr>
                             <td className="product-remove">
-                              <a href="javascript:void(0)">
-                                <i
-                                  className="fa fa-times-circle"
-                                  aria-hidden="true"
-                                />
-                              </a>
+                              <button
+                                type="button"
+                                onClick={handleRemoveProduct}
+                                aria-label="Supprimer le produit"
+                                className="btn-link"
+                              >
+                                <i className="fa fa-times-circle" aria-hidden="true" />
+                              </button>
                             </td>
                             <td className="product-thumbnail">
-                              <Link to="/product_detail"> {/* Lien vers les détails du produit */}
+                              <Link to="/product_detail">
                                 <img src="img/products/02/01.jpg" alt="Produit" />
                               </Link>
                             </td>
@@ -132,10 +141,7 @@ const Cart = () => {
                             </td>
                             <td>
                               <div className="product-quantity">
-                                <span
-                                  data-value="+"
-                                  className="quantity-btn quantityMinus"
-                                >
+                                <span data-value="+" className="quantity-btn quantityMinus">
                                   <i className="ti-minus" />
                                 </span>
                                 <input
@@ -148,10 +154,7 @@ const Cart = () => {
                                   title="Quantity"
                                   type="number"
                                 />
-                                <span
-                                  data-value="-"
-                                  className="quantity-btn quantityPlus"
-                                >
+                                <span data-value="-" className="quantity-btn quantityPlus">
                                   <i className="ti-plus" />
                                 </span>
                               </div>
@@ -169,7 +172,7 @@ const Cart = () => {
                                   name="coupon_code"
                                   className="input--lg"
                                   id="coupon_code"
-                                  defaultValue
+                                  defaultValue=""
                                   placeholder="Coupon code"
                                   type="text"
                                 />
@@ -179,7 +182,7 @@ const Cart = () => {
                                   name="apply_coupon"
                                   value="Apply Coupon"
                                 >
-                                  Aplliquer le coupon
+                                  Appliquer le coupon
                                 </button>
                               </div>
                               <button
@@ -220,7 +223,7 @@ const Cart = () => {
                                     data-index={0}
                                     id="shipping_method_0_flat_rate2"
                                     defaultValue="flat_rate:2"
-                                    defaultChecked="checked"
+                                    defaultChecked
                                     type="radio"
                                   />
                                   <label htmlFor="shipping_method_0_flat_rate2">
@@ -262,11 +265,13 @@ const Cart = () => {
                                   </label>
                                 </li>
                               </ul>
-                              <form>
-                                <a href="javascript:void(0)">
-                                  Mettre à jour la livraison
-                                </a>
-                              </form>
+                              <button
+                                type="button"
+                                onClick={handleUpdateShipping}
+                                className="btn btn-link"
+                              >
+                                Mettre à jour la livraison
+                              </button>
                             </td>
                           </tr>
                           <tr>
